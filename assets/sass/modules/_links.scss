@@ -1,0 +1,16 @@
+a {
+  color: $link;
+  text-decoration: none;
+
+  &:hover { color: $link_hover; }
+}
+
+%link-alt {
+  color: $link_alt;
+  
+  &:hover { color: $link_hover; }
+}
+
+%link-heavy {
+  font-weight: 800;
+}

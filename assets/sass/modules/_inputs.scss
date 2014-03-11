@@ -1,0 +1,23 @@
+input {
+  background: #E0E7E9;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  height: 21px;
+  width: 200px;
+}
+
+%input-search {
+  display: inline;
+  position: relative;
+
+  i {
+    left: 5px;
+    position: absolute;
+    top: 3px;
+  }
+
+  input {
+    padding-left: 23px;
+  }
+}

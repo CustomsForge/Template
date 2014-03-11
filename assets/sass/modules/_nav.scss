@@ -1,0 +1,19 @@
+nav a {
+  @extend %link-heavy;
+  display: inline;
+  margin-right: 5px;
+}
+
+%nav-header {
+  float: left;
+  font-size: 14px;
+  margin: 2px 20px 0 0;
+
+  a { @extend %link-alt; }
+}
+
+%nav-subheader {
+  @extend %nav-header;
+  margin: 0;
+  font-size: 13px;
+}

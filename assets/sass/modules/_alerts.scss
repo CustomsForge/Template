@@ -1,0 +1,16 @@
+.alert {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 8px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+%alert-warning {
+  background: $alert_warning;
+}
+
+%alert-notification {
+  @extend %alert-warning;
+  margin-top: 3px;
+}

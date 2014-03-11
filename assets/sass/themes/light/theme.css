@@ -1,0 +1,208 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #e8edee;
+  color: #131924;
+  font-family: 'Open Sans';
+  font-size: 13px; }
+
+#header {
+  background: #344960;
+  color: red;
+  height: 60px;
+  padding-top: 20px; }
+
+#subheader {
+  background: #293a4d;
+  height: 40px;
+  display: block;
+  padding-top: 13px; }
+
+#main {
+  height: 100%; }
+
+#filter {
+  background: #d8e0e2;
+  border-right: 1px solid #c6d1d5;
+  height: 100%;
+  width: 200px; }
+
+#footer {
+  text-align: center;
+  padding: 20px; }
+
+.alert {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 8px;
+  padding: 2px 4px;
+  text-align: center; }
+
+#header .user-card .notifications li .alert {
+  background: #cc0000; }
+
+#header .user-card .notifications li .alert {
+  margin-top: 3px; }
+
+.avatar {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 5px 3px 5px; }
+  .avatar:hover {
+    background: rgba(0, 0, 0, 0.2); }
+  .avatar img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px; }
+
+h1 {
+  font-family: 'Fugaz One';
+  font-size: 18px; }
+
+#header h1 {
+  float: left;
+  margin-right: 20px; }
+
+a {
+  color: #131924;
+  text-decoration: none; }
+  a:hover {
+    color: #46cb65; }
+
+#header nav a, #subheader nav a {
+  color: red; }
+  #header nav a:hover, #subheader nav a:hover {
+    color: #46cb65; }
+
+nav a {
+  font-weight: 800; }
+
+i {
+  color: #131924; }
+
+#header .user-card .notifications li i {
+  color: red; }
+
+#header .user-card .notifications li i {
+  cursor: pointer; }
+  #header .user-card .notifications li i:hover {
+    color: #46cb65; }
+
+#header .user-card .notifications li i {
+  font-size: 16px; }
+
+input {
+  background: #E0E7E9;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  height: 21px;
+  width: 200px; }
+
+#header .search {
+  display: inline;
+  position: relative; }
+  #header .search i {
+    left: 5px;
+    position: absolute;
+    top: 3px; }
+  #header .search input {
+    padding-left: 23px; }
+
+nav a {
+  display: inline;
+  margin-right: 5px; }
+
+#header nav, #subheader nav {
+  float: left;
+  font-size: 14px;
+  margin: 2px 20px 0 0; }
+
+#subheader nav {
+  margin: 0;
+  font-size: 13px; }
+
+#header .user-card {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+  #header .user-card .avatar {
+    float: right; }
+  #header .user-card .notifications {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin-top: 15px;
+    position: relative; }
+    #header .user-card .notifications li {
+      cursor: pointer;
+      float: left;
+      height: 100%;
+      margin-right: 10px;
+      position: relative;
+      text-align: center;
+      width: 20px; }

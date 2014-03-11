@@ -1,0 +1,45 @@
+body {
+  background: $body_bg;
+  color: $text;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
+#header {
+  background: $header_bg;
+  color: $text_alt;
+  height: 60px;
+  padding-top: 20px;
+
+  h1 { @extend %h1-logo; }
+  nav { @extend %nav-header; }
+  .search { @extend %input-search; }
+  .user-card { @extend %user-card-header; }
+}
+
+#subheader {
+  background: $subheader_bg;
+  height: 40px;
+  display: block;
+  padding-top: 13px;
+
+  nav { @extend %nav-subheader; }
+}
+
+#main {
+  height: 100%;
+}
+
+#filter {
+  background: $filter_bg;
+  border-right: 1px solid $border;
+  height: 100%;
+  width: 200px;
+}
+
+#content {}
+
+#footer {
+  text-align: center;
+  padding: 20px;
+}

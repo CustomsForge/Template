@@ -1,0 +1,19 @@
+i {
+  color: $text;
+}
+
+%icon-alt {
+  color: $text_alt;
+}
+
+%icon-interactive {
+  cursor: pointer;
+
+  &:hover { color: $link_hover; }
+}
+
+%icon-notification {
+  @extend %icon-interactive;
+  @extend %icon-alt;
+  font-size: 16px;
+}

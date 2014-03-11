@@ -1,0 +1,30 @@
+.user-card {}
+
+%user-card-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  .avatar { float: right; }
+
+  .notifications {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+
+    li {
+      cursor: pointer;
+      float: left;
+      height: 100%;
+      margin-right: 10px;
+      position: relative;
+      text-align: center;
+      width: 20px;
+
+      i { @extend %icon-notification; }
+      .alert { @extend %alert-notification; }
+    }
+  }
+}
