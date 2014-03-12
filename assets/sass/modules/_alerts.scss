@@ -6,11 +6,7 @@
   text-align: center;
 }
 
-%alert-warning {
+.alert.warning {
   background: $alert_warning;
-}
-
-%alert-notification {
-  @extend %alert-warning;
-  margin-top: 3px;
+  color: $text_alt;
 }

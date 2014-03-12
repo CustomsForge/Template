@@ -24,7 +24,7 @@
       width: 20px;
 
       i { @extend %icon-notification; }
-      .alert { @extend %alert-notification; }
+      .alert { margin-top: 3px; }
     }
   }
 }

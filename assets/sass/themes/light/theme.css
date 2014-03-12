@@ -100,11 +100,9 @@ body {
   padding: 2px 4px;
   text-align: center; }
 
-#header .user-card .notifications li .alert {
-  background: #cc0000; }
-
-#header .user-card .notifications li .alert {
-  margin-top: 3px; }
+.alert.warning {
+  background: #cc0000;
+  color: red; }
 
 .avatar {
   background: rgba(0, 0, 0, 0.1);
@@ -206,3 +204,5 @@ nav a {
       position: relative;
       text-align: center;
       width: 20px; }
+      #header .user-card .notifications li .alert {
+        margin-top: 3px; }
