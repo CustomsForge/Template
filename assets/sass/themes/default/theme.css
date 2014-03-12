@@ -117,6 +117,25 @@ body {
     height: 32px;
     width: 32px; }
 
+.button {
+  border-radius: 2px;
+  color: rgba(19, 25, 36, 0.3);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 6px 20px 4px;
+  text-transform: uppercase; }
+  .button:hover {
+    color: white; }
+  .button:active {
+    color: #131924; }
+
+.button.submit {
+  background: #46cb65; }
+
+.button.cancel {
+  background: #cc0000; }
+
 h1 {
   font-family: 'Fugaz One';
   font-size: 18px; }
