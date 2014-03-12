@@ -13,7 +13,7 @@ body {
 
   h1 { @extend %h1-logo; }
   nav { @extend %nav-header; }
-  .search { @extend %input-search; }
+  .input-search {  }
   .user-card { @extend %user-card-header; }
 }
 

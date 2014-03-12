@@ -1,23 +1,25 @@
 input {
   background: #E0E7E9;
   border: none;
-  border-radius: 10px;
   outline: 0;
   height: 21px;
   width: 200px;
 }
 
-%input-search {
+.input-search {
   display: inline;
   position: relative;
 
-  i {
-    left: 5px;
+  &:before {
+    content: '\f002';
+    font-family: FontAwesome;
     position: absolute;
+    left: 4px;
     top: 3px;
   }
 
   input {
+    border-radius: 10px;
     padding-left: 23px;
   }
 }
