@@ -32,11 +32,10 @@ body.filter-open {
   }
 
   .input-search {
+    float: left;
     position: relative;
-    top: -2px;
-
-    input { @extend %transition-basic; }
-    input:focus { width: 500px; }
+    top: -1px;
+    width: 200px;
   }
 
   .user-box {
