@@ -86,28 +86,29 @@ body.filter-open {
   #header h1 {
     float: left;
     margin-right: 20px; }
-  #header .user-card {
+  #header .user-box {
     position: absolute;
     top: 10px;
     right: 10px; }
-    #header .user-card .avatar {
-      float: right; }
-    #header .user-card .notifications {
-      display: inline-block;
+    #header .user-box .notifications {
       float: left;
       height: 100%;
       margin-top: 15px;
       position: relative; }
-      #header .user-card .notifications li {
-        cursor: pointer;
-        float: left;
-        height: 100%;
+      #header .user-box .notifications a {
+        display: block;
         margin-right: 10px;
-        position: relative;
-        text-align: center;
-        width: 20px; }
-        #header .user-card .notifications li .alert {
-          margin-top: 3px; }
+        width: 100%; }
+      #header .user-box .notifications i {
+        margin-right: 0; }
+      #header .user-box .notifications .alert {
+        left: -8px;
+        top: -11px; }
+    #header .user-box .user-card {
+      float: right; }
+      #header .user-box .user-card .alert {
+        left: 18px;
+        top: 4px; }
 
 #sidebar {
   height: 100%;
@@ -152,6 +153,7 @@ body.filter-open {
   display: inline-block;
   font-size: 8px;
   padding: 2px 4px;
+  position: absolute;
   text-align: center; }
 
 .alert.warning {
@@ -200,9 +202,9 @@ a {
   a:hover {
     color: #46cb65; }
 
-#header .user-card .notifications li a, #sidebar-nav a {
+#header .user-box .notifications a, #sidebar-nav a {
   color: white; }
-  #header .user-card .notifications li a:hover, #sidebar-nav a:hover {
+  #header .user-box .notifications a:hover, #sidebar-nav a:hover {
     color: #46cb65; }
 
 nav a {
@@ -212,10 +214,10 @@ i {
   color: #131924;
   margin-right: 5px; }
 
-#header .user-card .notifications li a i, #sidebar-nav a i {
+#header .user-box .notifications a i, #sidebar-nav a i {
   color: white; }
 
-#header .user-card .notifications li a:hover i, #sidebar-nav a:hover i {
+#header .user-box .notifications a:hover i, #sidebar-nav a:hover i {
   color: #46cb65; }
 
 input {
