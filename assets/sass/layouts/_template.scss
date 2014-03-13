@@ -1,4 +1,4 @@
-$header_height: 60px;
+$header_height: 50px;
 $sidebar_width: 37px;
 $filter_width: 200px;
 
@@ -20,7 +20,7 @@ body.filter-open {
   color: $secondary_text;
   height: $header_height;
   left: 0;
-  padding-top: 20px;
+  padding: 16px 10px 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -31,9 +31,17 @@ body.filter-open {
     margin-right: 20px;
   }
 
+  .input-search {
+    position: relative;
+    top: -2px;
+
+    input { @extend %transition-basic; }
+    input:focus { width: 500px; }
+  }
+
   .user-box {
     position: absolute;
-    top: 10px;
+    top: 2px;
     right: 10px;
 
     .notifications {
@@ -79,13 +87,13 @@ body.filter-open {
 
 #sidebar-nav {
   @extend %nav-secondary;
+  @extend %transition-basic;
   background: $secondary_alt;
   height: 100%;
   font-size: 18px;
   overflow: hidden;
   padding: 10px;
   padding-top: $header_height + 10px;
-  transition: .23s all;
   width: 100%;
 
   &:hover { width: 160px; }
