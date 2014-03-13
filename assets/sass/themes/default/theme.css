@@ -67,11 +67,11 @@ body {
   color: #131924;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: 37px;
-  padding-top: 60px; }
+  padding-left: 47px;
+  padding-top: 70px; }
 
 body.filter-open {
-  padding-left: 237px; }
+  padding-left: 247px; }
 
 #header {
   background: #344960;
@@ -138,6 +138,7 @@ body.filter-open {
   border-right: 1px solid #c6d1d5;
   height: 100%;
   left: 37px;
+  padding: 10px;
   position: fixed;
   top: 60px;
   width: 200px; }

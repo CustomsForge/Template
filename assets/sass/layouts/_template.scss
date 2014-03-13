@@ -7,12 +7,12 @@ body {
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: $sidebar_width;
-  padding-top: $header_height;
+  padding-left: $sidebar_width + 10px;
+  padding-top: $header_height + 10px;
 }
 
 body.filter-open {
-  padding-left: $sidebar_width + $filter_width;
+  padding-left: $sidebar_width + $filter_width + 10px;
 }
 
 #header {
@@ -93,6 +93,7 @@ body.filter-open {
   border-right: 1px solid $border;
   height: 100%;
   left: $sidebar_width;
+  padding: 10px;
   position: fixed;
   top: $header_height;
   width: $filter_width;
