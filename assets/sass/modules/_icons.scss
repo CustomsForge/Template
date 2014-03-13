@@ -1,19 +1,18 @@
 i {
-  color: $text;
+  color: $primary_text;
+  margin-right: 5px;
 }
 
-%icon-alt {
-  color: $text_alt;
+%icon-secondary {
+  color: $secondary_text;
 }
 
-%icon-interactive {
-  cursor: pointer;
-
-  &:hover { color: $link_hover; }
+%icon-secondary-hover {
+  color: $secondary_link_hover;
 }
 
-%icon-notification {
-  @extend %icon-interactive;
-  @extend %icon-alt;
-  font-size: 16px;
+%icon-secondary-link {
+  @extend %icon-secondary;
+
+  &:hover { color: $secondary_link_hover; }
 }

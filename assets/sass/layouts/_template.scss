@@ -1,43 +1,102 @@
+$header_height: 60px;
+$sidebar_width: 37px;
+$filter_width: 200px;
+
 body {
   background: $body_bg;
-  color: $text;
+  color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
+  padding-left: $sidebar_width;
+  padding-top: $header_height;
+}
+
+body.filter-open {
+  padding-left: $sidebar_width + $filter_width;
 }
 
 #header {
   background: $header_bg;
-  color: $text_alt;
-  height: 60px;
+  color: $secondary_text;
+  height: $header_height;
+  left: 0;
   padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
 
-  h1 { @extend %h1-logo; }
-  nav { @extend %nav-header; }
-  .input-search {  }
-  .user-card { @extend %user-card-header; }
+  h1 { 
+    float: left;
+    margin-right: 20px;
+  }
+
+  .user-card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    .avatar { float: right; }
+
+    .notifications {
+      display: inline-block;
+      float: left;
+      height: 100%;
+      margin-top: 15px;
+      position: relative;
+
+      li {
+        cursor: pointer;
+        float: left;
+        height: 100%;
+        margin-right: 10px;
+        position: relative;
+        text-align: center;
+        width: 20px;
+
+        a { @extend %secondary-link; }
+
+        .alert { margin-top: 3px; }
+      }
+    }
+  }
 }
 
-#subheader {
-  background: $subheader_bg;
-  height: 40px;
-  display: block;
-  padding-top: 13px;
-
-  nav { @extend %nav-subheader; }
-}
-
-#main {
+#sidebar {
   height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: $sidebar_width;
+  z-index: 400;
+}
+
+#sidebar-nav {
+  @extend %nav-secondary;
+  background: $secondary_alt;
+  height: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  padding: 10px;
+  padding-top: $header_height + 10px;
+  transition: .23s all;
+  width: 100%;
+
+  &:hover { width: 160px; }
+
+  a { white-space: nowrap; }
+  i { margin-right: 10px; }
 }
 
 #filter {
   background: $filter_bg;
   border-right: 1px solid $border;
   height: 100%;
-  width: 200px;
+  left: $sidebar_width;
+  position: fixed;
+  top: $header_height;
+  width: $filter_width;
 }
-
-#content {}
 
 #footer {
   text-align: center;

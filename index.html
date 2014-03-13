@@ -6,16 +6,9 @@
 
   <link rel="stylesheet" href="assets/sass/themes/default/theme.css">
 </head>
-<body>
+<body class="filter-open">
   <div id="header">
     <h1>CustomsForge</h1>
-    <nav>
-      <a href="#">CDLC</a>
-      <a href="#">Requests</a>
-      <a href="#">Upload</a>
-      <a href="#">Admin</a>
-      <a href="#">Forums</a>
-    </nav>
     <div class="search">
       <i class="fa fa-search"></i>
       <input type="text" />
@@ -23,37 +16,46 @@
     <div class="user-card">
       <ul class="notifications">
         <li>
-          <i class="fa fa-cloud-upload"></i>
-          <div class="alert warning">3</div>
+          <a href="">
+            <i class="fa fa-cloud-upload"></i>
+            <div class="alert warning">3</div>
+          </a>
         </li>
         <li>
-          <i class="fa fa-music"></i>
-          <div class="alert warning">10</div>
+          <a href="">
+            <i class="fa fa-music"></i>
+            <div class="alert warning">10</div>
+          </a>
         </li>
         <li>
-          <i class="fa fa-envelope"></i>
-          <div class="alert warning">20</div>
+          <a href="">
+            <i class="fa fa-envelope"></i>
+            <div class="alert warning">20</div>
+          </a>
         </li>
         <li>
-          <i class="fa fa-exclamation-triangle"></i>
-          <div class="alert warning">30</div>
+          <a href="">
+            <i class="fa fa-exclamation-triangle"></i>
+            <div class="alert warning">30</div>
+          </a>
         </li>
       </ul>
       <div class="avatar"><img src="https://avatars1.githubusercontent.com/u/427439?s=140"></div>
     </div>
   </div>
-  <div id="subheader">
-    <nav>
-      <a href="#">CDLC</a>
-      <a href="#">Requests</a>
-      <a href="#">Upload</a>
-      <a href="#">Admin</a>
-      <a href="#">Forums</a>
+  <div id="sidebar">
+    <nav id="sidebar-nav">
+      <a href="#"><i class="fa fa-tachometer"></i>Home</a>
+      <a href="#"><i class="fa fa-folder"></i>Forums</a>
+      <a href="#"><i class="fa fa-wrench"></i>CDLC Search</a>
+      <a href="#"><i class="fa fa-edit"></i>My Content</a>
     </nav>
   </div>
-  <div id="main">
-    <div id="filter"></div>
-    <div id="content"></div>
+  <div id="filter">
+    Filter content goes here<br /><br /><br />
+  </div>
+  <div id="content">
+    Filter content goes here<br /><br /><br />
   </div>
 </body>
 </html>

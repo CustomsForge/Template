@@ -1,21 +1,35 @@
 // Global Colors
-$dark_blue: #131924;
-$white: #FFF;
-$green: #46CB65;
 $red: #CC0000;
+$green: #46CB65;
 
+$primary: #E8EDEE;
+$primary_alt: #D8E0E2;
+$primary_highlight: #C6D1D5;
+$primary_text: #131924;
+$primary_link: #131924;
+$primary_link_hover: $green;
+
+$secondary: #344960;
+$secondary_alt: #293A4D;
+$secondary_text: #FFF;
+$secondary_link: #FFF;
+$secondary_link_hover: $green;
+
+
+// -----------------
 // Background colors
-$header_bg: #344960;
-$subheader_bg: #293A4D;
-$body_bg: #E8EDEE;
-$body_off_bg: #D8E0E2;
-$filter_bg: #D8E0E2;
-$border: #C6D1D5;
+// -----------------
+
+// Template
+$body_bg: $primary;
+$filter_bg: $primary_alt;
+$border: $primary_highlight;
+$header_bg: $secondary;
+$nav_bg: $secondary_alt;
+
+// Alerts
 $alert_warning: $red;
 
-// Text Colors
-$text: $dark_blue;
-$text_alt: $white;
-$link: $dark_blue;
-$link_hover: $green;
-$link_alt: $white;
+// Buttons
+$button_submit: $green;
+$button_cancel: $red;

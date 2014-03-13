@@ -1,19 +1,16 @@
 nav a {
   @extend %link-heavy;
-  display: inline;
-  margin-right: 5px;
+  display: block;
+  margin-bottom: 10px;
 }
 
-%nav-header {
-  float: left;
-  font-size: 14px;
-  margin: 2px 20px 0 0;
-
-  a { @extend %link-alt; }
+%nav-inline {
+  a {
+    display: inline;
+    margin-right: 5px;
+  }
 }
 
-%nav-subheader {
-  @extend %nav-header;
-  margin: 0;
-  font-size: 13px;
+%nav-secondary {
+  a { @extend %secondary-link; }
 }

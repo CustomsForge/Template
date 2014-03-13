@@ -1,14 +1,20 @@
 a {
-  color: $link;
+  color: $primary_link;
   text-decoration: none;
 
-  &:hover { color: $link_hover; }
+  &:hover { color: $primary_link_hover; }
 }
 
-%link-alt {
-  color: $link_alt;
+%secondary-link {
+  color: $secondary_link;
   
-  &:hover { color: $link_hover; }
+  i { @extend %icon-secondary; }
+  
+  &:hover {
+    color: $secondary_link_hover;
+
+    i { @extend %icon-secondary-hover; }
+  }
 }
 
 %link-heavy {
