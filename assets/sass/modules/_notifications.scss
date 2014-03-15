@@ -1,0 +1,19 @@
+.notifications {
+  height: 100%;
+  margin-top: 9px;
+  position: relative;
+
+  a {
+    @extend %secondary-link;
+    display: block;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  i { margin-right: 0; }
+  
+  .alert { 
+    left: -8px;
+    top: -11px;
+  }
+}

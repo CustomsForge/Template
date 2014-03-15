@@ -1,6 +1,5 @@
-$header_height: 50px;
-$sidebar_width: 37px;
-$filter_width: 200px;
+$header_height: 40px;
+$sidebar_width: 32px;
 
 body {
   background: $body_bg;
@@ -12,7 +11,7 @@ body {
 }
 
 body.filter-open {
-  padding-left: $sidebar_width + $filter_width + 10px;
+  padding-left: $sidebar_width + 10px;
 }
 
 #header {
@@ -20,96 +19,34 @@ body.filter-open {
   color: $secondary_text;
   height: $header_height;
   left: 0;
-  padding: 16px 10px 0;
+  padding: 0 $pad 0 $sidebar_width + $pad;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 500;
 
-  h1 { 
-    float: left;
-    margin-right: 20px;
-  }
-
   .input-search {
     float: left;
-    position: relative;
-    top: -1px;
-    width: 200px;
+    margin-top: 10px;
+
+    input { @extend %transition-width; width: 100px; }
+    input:focus { width: 200px; }
+  }
+
+  .notifications {
+    float: left;
+    margin-right: 5px;
   }
 
   .user-box {
     position: absolute;
-    top: 2px;
+    top: 7px;
     right: 10px;
-
-    .notifications {
-      float: left;
-      height: 100%;
-      margin-top: 15px;
-      position: relative;
-
-      a {
-        @extend %secondary-link;
-        display: block;
-        margin-right: 10px;
-        width: 100%;
-      }
-
-      i { margin-right: 0; }
-      
-      .alert { 
-        left: -8px;
-        top: -11px;
-      }
-    }
 
     .user-card {
       float: right;
-        
-      .alert { 
-        left: 18px;
-        top: 4px;
-      }
     }
   }
-}
-
-#sidebar {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: $sidebar_width;
-  z-index: 400;
-}
-
-#sidebar-nav {
-  @extend %nav-secondary;
-  @extend %transition-basic;
-  background: $secondary_alt;
-  height: 100%;
-  font-size: 18px;
-  overflow: hidden;
-  padding: 10px;
-  padding-top: $header_height + 10px;
-  width: 100%;
-
-  &:hover { width: 160px; }
-
-  a { white-space: nowrap; }
-  i { margin-right: 10px; }
-}
-
-#filter {
-  background: $filter_bg;
-  border-right: 1px solid $border;
-  height: 100%;
-  left: $sidebar_width;
-  padding: 10px;
-  position: fixed;
-  top: $header_height;
-  width: $filter_width;
 }
 
 #footer {

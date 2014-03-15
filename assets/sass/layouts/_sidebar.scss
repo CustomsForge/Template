@@ -1,0 +1,55 @@
+#sidebar {
+  @extend %transition-width;
+  background: $secondary;
+  border-right: 1px solid rgba(0,0,0,0.3);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: $sidebar_width;
+  z-index: 900;
+
+  &:hover {
+    width: 150px;
+
+    .logo-text { letter-spacing: 0em !important; }
+    .logo-text:first-child { width: 80px; }
+    .logo-text:last-child { width: 50px; }
+  }
+
+  .logo {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    color: $secondary_text;
+    float: left;
+    height: $header_height;
+    margin-right: 10px;
+    padding-top: 12px;
+    text-align: center;
+    width: 100%;
+
+    .logo-text {
+      @extend %transition-basic;
+      display: inline-block;
+      height: 20px;
+      letter-spacing: .05em;
+      position: relative;
+      overflow: hidden;
+      width: 12px;
+
+      &:last-child { margin-left: -4px; }
+    }
+  }
+}
+
+#sidebar-nav {
+  @extend %transition-width;
+  height: 100%;
+  overflow: hidden;
+  padding: 7px;
+  padding-top: $pad;
+  width: 100%;
+
+  a { color: $secondary_text; white-space: nowrap; }
+  .label {position:relative; top:-2px;}
+  i { color: $secondary_text; font-size: 18px; margin-right: 7px; width: 18px;}
+}

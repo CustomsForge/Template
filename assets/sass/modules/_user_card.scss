@@ -1,1 +1,9 @@
-.user-card {}
+.user-card {
+  cursor: pointer;
+  position: relative;
+        
+  .alert { 
+    left: 0;
+    top: 4px;
+  }
+}

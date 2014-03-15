@@ -10,7 +10,3 @@ nav a {
     margin-right: 5px;
   }
 }
-
-%nav-secondary {
-  a { @extend %secondary-link; }
-}

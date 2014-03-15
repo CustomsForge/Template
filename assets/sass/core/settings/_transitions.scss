@@ -1,3 +1,7 @@
 %transition-basic {
   transition: .23s all;
 }
+
+%transition-width {
+  transition: width .23s;
+}

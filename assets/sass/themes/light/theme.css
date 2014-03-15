@@ -4,7 +4,7 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,98 +62,107 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-#sidebar-nav {
+#sidebar .logo .logo-text {
   transition: .23s all; }
+
+#header .input-search input, #sidebar, #sidebar-nav {
+  transition: width .23s; }
 
 body {
   background: #e8edee;
   color: #131924;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: 47px;
-  padding-top: 60px; }
+  padding-left: 42px;
+  padding-top: 50px; }
 
 body.filter-open {
-  padding-left: 247px; }
+  padding-left: 42px; }
 
 #header {
   background: #344960;
   color: white;
-  height: 50px;
+  height: 40px;
   left: 0;
-  padding: 16px 10px 0;
+  padding: 0 10px 0 42px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 500; }
-  #header h1 {
-    float: left;
-    margin-right: 20px; }
   #header .input-search {
     float: left;
-    position: relative;
-    top: -1px;
-    width: 200px; }
+    margin-top: 10px; }
+    #header .input-search input {
+      width: 100px; }
+    #header .input-search input:focus {
+      width: 200px; }
+  #header .notifications {
+    float: left;
+    margin-right: 5px; }
   #header .user-box {
     position: absolute;
-    top: 2px;
+    top: 7px;
     right: 10px; }
-    #header .user-box .notifications {
-      float: left;
-      height: 100%;
-      margin-top: 15px;
-      position: relative; }
-      #header .user-box .notifications a {
-        display: block;
-        margin-right: 10px;
-        width: 100%; }
-      #header .user-box .notifications i {
-        margin-right: 0; }
-      #header .user-box .notifications .alert {
-        left: -8px;
-        top: -11px; }
     #header .user-box .user-card {
       float: right; }
-      #header .user-box .user-card .alert {
-        left: 18px;
-        top: 4px; }
-
-#sidebar {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 37px;
-  z-index: 400; }
-
-#sidebar-nav {
-  background: #293a4d;
-  height: 100%;
-  font-size: 18px;
-  overflow: hidden;
-  padding: 10px;
-  padding-top: 60px;
-  width: 100%; }
-  #sidebar-nav:hover {
-    width: 160px; }
-  #sidebar-nav a {
-    white-space: nowrap; }
-  #sidebar-nav i {
-    margin-right: 10px; }
-
-#filter {
-  background: #d8e0e2;
-  border-right: 1px solid #c6d1d5;
-  height: 100%;
-  left: 37px;
-  padding: 10px;
-  position: fixed;
-  top: 50px;
-  width: 200px; }
 
 #footer {
   text-align: center;
   padding: 20px; }
+
+#sidebar {
+  background: #22313f;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 32px;
+  z-index: 900; }
+  #sidebar:hover {
+    width: 150px; }
+    #sidebar:hover .logo-text {
+      letter-spacing: 0em !important; }
+    #sidebar:hover .logo-text:first-child {
+      width: 80px; }
+    #sidebar:hover .logo-text:last-child {
+      width: 50px; }
+  #sidebar .logo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: 12px;
+    text-align: center;
+    width: 100%; }
+    #sidebar .logo .logo-text {
+      display: inline-block;
+      height: 20px;
+      letter-spacing: .05em;
+      position: relative;
+      overflow: hidden;
+      width: 12px; }
+      #sidebar .logo .logo-text:last-child {
+        margin-left: -4px; }
+
+#sidebar-nav {
+  height: 100%;
+  overflow: hidden;
+  padding: 7px;
+  padding-top: 10px;
+  width: 100%; }
+  #sidebar-nav a {
+    color: white;
+    white-space: nowrap; }
+  #sidebar-nav .label {
+    position: relative;
+    top: -2px; }
+  #sidebar-nav i {
+    color: white;
+    font-size: 18px;
+    margin-right: 7px;
+    width: 18px; }
 
 .alert {
   border-radius: 999px;
@@ -168,17 +177,11 @@ body.filter-open {
   color: white; }
 
 .avatar {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 5px 3px 5px; }
-  .avatar:hover {
-    background: rgba(0, 0, 0, 0.2); }
+  display: inline-block; }
   .avatar img {
     border-radius: 50%;
-    height: 32px;
-    width: 32px; }
+    height: 28px;
+    width: 28px; }
 
 .button {
   border-radius: 2px;
@@ -209,29 +212,29 @@ a {
   a:hover {
     color: #46cb65; }
 
-#header .user-box .notifications a, #sidebar-nav a {
+.notifications a {
   color: white; }
-  #header .user-box .notifications a:hover, #sidebar-nav a:hover {
+  .notifications a:hover {
     color: #46cb65; }
 
 nav a {
-  font-weight: 800; }
+  font-weight: 600; }
 
 i {
   color: #131924;
   margin-right: 5px; }
 
-#header .user-box .notifications a i, #sidebar-nav a i {
+.notifications a i {
   color: white; }
 
-#header .user-box .notifications a:hover i, #sidebar-nav a:hover i {
+.notifications a:hover i {
   color: #46cb65; }
 
 input {
   background: #E0E7E9;
   border: none;
   outline: 0;
-  height: 21px;
+  height: 20px;
   width: 100%; }
 
 .input-search {
@@ -241,13 +244,35 @@ input {
     content: '\f002';
     color: #131924;
     font-family: FontAwesome;
+    font-size: 10px;
+    left: 6px;
     position: absolute;
-    left: 4px;
-    top: 4px; }
+    top: 6px; }
   .input-search input {
     border-radius: 10px;
-    padding-left: 23px; }
+    padding-left: 21px; }
 
 nav a {
   display: block;
   margin-bottom: 10px; }
+
+.notifications {
+  height: 100%;
+  margin-top: 9px;
+  position: relative; }
+  .notifications a {
+    display: block;
+    margin-right: 10px;
+    width: 100%; }
+  .notifications i {
+    margin-right: 0; }
+  .notifications .alert {
+    left: -8px;
+    top: -11px; }
+
+.user-card {
+  cursor: pointer;
+  position: relative; }
+  .user-card .alert {
+    left: 0;
+    top: 4px; }
