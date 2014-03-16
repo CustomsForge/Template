@@ -1,10 +1,12 @@
 .avatar {
   display: inline-block;
+  height: 100%;
+  width: 100%;
 
   img {
-    border-radius: 50%;
-    height: 28px;
-    width: 28px;
+    border-radius: 4%;
+    height: 100%;
+    width: 100%;
   }
 }
 

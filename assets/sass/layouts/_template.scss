@@ -1,13 +1,13 @@
 $header_height: 40px;
-$sidebar_width: 32px;
+$sidebar_width: 42px;
 
 body {
   background: $body_bg;
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: $sidebar_width + $sidebar_width + 10px;
-  padding-top: $header_height + 10px;
+  padding-left: $sidebar_width + $sidebar_width + $pad_large;
+  padding-top: $header_height + $pad;
 }
 
 #header {
@@ -20,19 +20,21 @@ body {
   width: 100%;
   z-index: 500;
 
+  .input-search {
+    padding: 0 $pad_small;
+    margin-left: -100px;
+    left: 50%;
+    position: absolute;
+    width: 200px;
+
+    &:before { @extend %transition-basic; left: 10px; top: 50%; font-size: 12px; margin-top: -6px; }
+    input { @extend %transition-basic; width: 100%; font-size: 13px; padding-left: 25px; }
+    input:focus { height: 40px; }
+  }
+
   .notifications {
     float: left;
     margin-right: 5px;
-  }
-
-  .user-box {
-    position: absolute;
-    top: 7px;
-    right: 10px;
-
-    .user-card {
-      float: right;
-    }
   }
 }
 

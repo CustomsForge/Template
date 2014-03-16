@@ -16,6 +16,7 @@
     z-index: 800;
 
 
+    nav { margin-top: 114px; }
     nav a.active,
     nav a:hover { background: $body_bg; }
   }
@@ -31,7 +32,7 @@
   }
 
   .logo {
-    border-bottom: 1px solid rgba(#000,0.1);
+    border-bottom: 1px solid rgba(#000,0.2);
     color: $secondary_text;
     float: left;
     height: $header_height;
@@ -53,14 +54,14 @@
     }
   }
 
-  .input-search {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 $pad_small;
+  .user-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-    &:before { @extend %transition-basic; left: 12px;}
-    input { @extend %transition-basic; opacity: 0; width: 100%; }
-    input:focus { width: 200px; }
+    .user-card {
+      float: right;
+    }
   }
 }
 
@@ -68,12 +69,12 @@
   @extend %transition-width;
   height: 100%;
   overflow: hidden;
-  padding-top: $pad;
   width: 100%;
 
-  a { color: $secondary_text; padding: 8px; white-space: nowrap; }
+  a { color: $secondary_text; white-space: nowrap; 
+    border-bottom: 1px solid rgba(#000,0.2);}
   a.active,
   a:hover { background: #2F424D; }
-  .label {position:relative; top:-2px;}
-  i { color: $secondary_text; font-size: 18px; margin-right: 7px; width: 18px;}
+  .label {position:relative; top:-2px; font-size: 15px; font-weight: 400;}
+  i { color: $secondary_text; font-size: 20px; text-align: center; padding: 8px 0; width: $sidebar_width; }
 }

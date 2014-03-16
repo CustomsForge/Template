@@ -62,7 +62,7 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.sidebar .input-search:before, .sidebar .input-search input {
+#header .input-search:before, #header .input-search input {
   transition: .23s all; }
 
 .sidebar, .sidebar .logo .logo-text, .sidebar-nav {
@@ -73,27 +73,38 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: 74px;
+  padding-left: 99px;
   padding-top: 50px; }
 
 #header {
   color: white;
   height: 40px;
   left: 0;
-  padding: 0 10px 0 42px;
+  padding: 0 10px 0 52px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 500; }
+  #header .input-search {
+    padding: 0 5px;
+    margin-left: -100px;
+    left: 50%;
+    position: absolute;
+    width: 200px; }
+    #header .input-search:before {
+      left: 10px;
+      top: 50%;
+      font-size: 12px;
+      margin-top: -6px; }
+    #header .input-search input {
+      width: 100%;
+      font-size: 13px;
+      padding-left: 25px; }
+    #header .input-search input:focus {
+      height: 40px; }
   #header .notifications {
     float: left;
     margin-right: 5px; }
-  #header .user-box {
-    position: absolute;
-    top: 7px;
-    right: 10px; }
-    #header .user-box .user-card {
-      float: right; }
 
 #footer {
   text-align: center;
@@ -106,12 +117,14 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 32px;
+  width: 42px;
   z-index: 900; }
   .sidebar.subnav {
     background: #2F424D;
-    left: 32px;
+    left: 42px;
     z-index: 800; }
+    .sidebar.subnav nav {
+      margin-top: 114px; }
     .sidebar.subnav nav a.active,
     .sidebar.subnav nav a:hover {
       background: #22313f; }
@@ -128,7 +141,7 @@ body {
     .sidebar:hover .input-search:before {
       color: #000; }
   .sidebar .logo {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: white;
     float: left;
     height: 40px;
@@ -145,38 +158,35 @@ body {
       width: 12px; }
       .sidebar .logo .logo-text:last-child {
         margin-left: -4px; }
-  .sidebar .input-search {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 5px; }
-    .sidebar .input-search:before {
-      left: 12px; }
-    .sidebar .input-search input {
-      opacity: 0;
-      width: 100%; }
-    .sidebar .input-search input:focus {
-      width: 200px; }
+  .sidebar .user-box {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .sidebar .user-box .user-card {
+      float: right; }
 
 .sidebar-nav {
   height: 100%;
   overflow: hidden;
-  padding-top: 10px;
   width: 100%; }
   .sidebar-nav a {
     color: white;
-    padding: 8px;
-    white-space: nowrap; }
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .sidebar-nav a.active,
   .sidebar-nav a:hover {
     background: #2F424D; }
   .sidebar-nav .label {
     position: relative;
-    top: -2px; }
+    top: -2px;
+    font-size: 15px;
+    font-weight: 400; }
   .sidebar-nav i {
     color: white;
-    font-size: 18px;
-    margin-right: 7px;
-    width: 18px; }
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    width: 42px; }
 
 .alert {
   border-radius: 999px;
@@ -191,11 +201,13 @@ body {
   color: white; }
 
 .avatar {
-  display: inline-block; }
+  display: inline-block;
+  height: 100%;
+  width: 100%; }
   .avatar img {
-    border-radius: 50%;
-    height: 28px;
-    width: 28px; }
+    border-radius: 4%;
+    height: 100%;
+    width: 100%; }
 
 .button {
   border-radius: 2px;
@@ -235,8 +247,7 @@ nav a {
   font-weight: 600; }
 
 i {
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 5px; }
+  color: rgba(255, 255, 255, 0.7); }
 
 .notifications a i {
   color: white; }
@@ -255,14 +266,14 @@ input {
   position: relative; }
   .input-search:before {
     content: '\f002';
-    color: rgba(255, 255, 255, 0.7);
+    color: #000;
     font-family: FontAwesome;
     font-size: 10px;
     left: 6px;
     position: absolute;
     top: 6px; }
   .input-search input {
-    border-radius: 10px;
+    border-radius: 0 0 4px 4px;
     padding-left: 21px; }
 
 nav a {
@@ -284,7 +295,10 @@ nav a {
 
 .user-card {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  height: 50px;
+  padding-top: 8px;
+  width: 42px; }
   .user-card .alert {
-    left: 0;
-    top: 4px; }
+    left: 10px;
+    bottom: 36px; }

@@ -1,9 +1,12 @@
 .user-card {
   cursor: pointer;
   position: relative;
+  height: 50px;
+  padding-top: 8px;
+  width: 42px;
         
-  .alert { 
-    left: 0;
-    top: 4px;
+  .alert {
+    left: 10px;
+    bottom: 36px;
   }
 }
