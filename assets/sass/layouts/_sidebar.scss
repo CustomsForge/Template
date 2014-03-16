@@ -55,13 +55,8 @@
   }
 
   .user-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    .user-card {
-      float: right;
-    }
+    float: left;
+    border-right: 1px solid rgba(#000,0.2);
   }
 }
 
@@ -73,6 +68,7 @@
 
   a { color: $secondary_text; white-space: nowrap; 
     border-bottom: 1px solid rgba(#000,0.2);}
+  a:first-child {border-top: 1px solid rgba(#000,0.2);}
   a.active,
   a:hover { background: #2F424D; }
   .label {position:relative; top:-2px; font-size: 15px; font-weight: 400;}
