@@ -1,6 +1,9 @@
 nav a {
-  @extend %link-heavy;
   display: block;
+}
+
+%nav-heavy {
+  @extend %link-heavy;
   text-transform: uppercase;
 }
 
@@ -13,6 +16,7 @@ nav a {
 
 %sidebar-nav {
   @extend %transition-width;
+  @extend %nav-heavy;
   width: 100%;
 
   a {

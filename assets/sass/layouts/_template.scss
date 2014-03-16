@@ -3,6 +3,23 @@ body {
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
+}
+
+#main {
   padding-left: $body_offset + $pad_large;
   padding-top: $topbar_height + $pad;
+  padding-bottom: $footer_height;
+}
+
+#footer {
+  height: $footer_height;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+
+  nav {
+    @extend %nav-inline;
+    padding-top: 10px;
+  }
 }

@@ -75,11 +75,23 @@ body {
   background: #22313f;
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Open Sans';
-  font-size: 13px;
-  padding-left: 99px;
-  padding-top: 50px; }
+  font-size: 13px; }
 
-.sidebars {
+#main {
+  padding-left: 99px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: absolute; }
+  #footer nav {
+    padding-top: 10px; }
+
+#sidebars {
   height: 100%;
   left: 0;
   position: fixed;
@@ -220,7 +232,7 @@ a {
   a:hover {
     color: #46cb65; }
 
-nav a {
+.sidebar nav {
   font-weight: 800; }
 
 i {
@@ -248,8 +260,14 @@ input {
     padding-left: 25px; }
 
 nav a {
-  display: block;
+  display: block; }
+
+.sidebar nav {
   text-transform: uppercase; }
+
+#footer nav a {
+  display: inline;
+  margin-right: 5px; }
 
 .sidebar nav {
   width: 100%; }
