@@ -22,10 +22,10 @@ body {
 
   .input-search {
     padding: 0 $pad_small;
-    margin-left: -100px;
+    margin-left: -150px;
     left: 50%;
     position: absolute;
-    width: 200px;
+    width: 300px;
 
     &:before { @extend %transition-basic; left: 10px; top: 50%; font-size: 12px; margin-top: -6px; }
     input { @extend %transition-basic; width: 100%; font-size: 13px; padding-left: 25px; }
