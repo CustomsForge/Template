@@ -6,16 +6,11 @@ body {
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: $sidebar_width + 10px;
+  padding-left: $sidebar_width + $sidebar_width + 10px;
   padding-top: $header_height + 10px;
 }
 
-body.filter-open {
-  padding-left: $sidebar_width + 10px;
-}
-
 #header {
-  background: $header_bg;
   color: $secondary_text;
   height: $header_height;
   left: 0;
@@ -24,14 +19,6 @@ body.filter-open {
   top: 0;
   width: 100%;
   z-index: 500;
-
-  .input-search {
-    float: left;
-    margin-top: 10px;
-
-    input { @extend %transition-width; width: 100px; }
-    input:focus { width: 200px; }
-  }
 
   .notifications {
     float: left;

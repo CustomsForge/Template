@@ -62,25 +62,21 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-#sidebar .logo .logo-text {
+.sidebar .input-search:before, .sidebar .input-search input {
   transition: .23s all; }
 
-#header .input-search input, #sidebar, #sidebar-nav {
+.sidebar, .sidebar .logo .logo-text, .sidebar-nav {
   transition: width .23s; }
 
 body {
-  background: #34495e;
-  color: #131924;
+  background: #22313f;
+  color: rgba(255, 255, 255, 0.7);
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: 42px;
+  padding-left: 74px;
   padding-top: 50px; }
 
-body.filter-open {
-  padding-left: 42px; }
-
 #header {
-  background: #22313f;
   color: white;
   height: 40px;
   left: 0;
@@ -89,13 +85,6 @@ body.filter-open {
   top: 0;
   width: 100%;
   z-index: 500; }
-  #header .input-search {
-    float: left;
-    margin-top: 10px; }
-    #header .input-search input {
-      width: 100px; }
-    #header .input-search input:focus {
-      width: 200px; }
   #header .notifications {
     float: left;
     margin-right: 5px; }
@@ -110,25 +99,36 @@ body.filter-open {
   text-align: center;
   padding: 20px; }
 
-#sidebar {
-  background: #22313f;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+.sidebar {
+  background: #1E8BC3;
   height: 100%;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 32px;
   z-index: 900; }
-  #sidebar:hover {
+  .sidebar.subnav {
+    background: #2F424D;
+    left: 32px;
+    z-index: 800; }
+    .sidebar.subnav nav a.active,
+    .sidebar.subnav nav a:hover {
+      background: #22313f; }
+  .sidebar:hover {
     width: 150px; }
-    #sidebar:hover .logo-text {
+    .sidebar:hover .logo-text {
       letter-spacing: 0em !important; }
-    #sidebar:hover .logo-text:first-child {
+    .sidebar:hover .logo-text:first-child {
       width: 80px; }
-    #sidebar:hover .logo-text:last-child {
+    .sidebar:hover .logo-text:last-child {
       width: 50px; }
-  #sidebar .logo {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    .sidebar:hover .input-search input {
+      opacity: 1; }
+    .sidebar:hover .input-search:before {
+      color: #000; }
+  .sidebar .logo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: white;
     float: left;
     height: 40px;
@@ -136,29 +136,43 @@ body.filter-open {
     padding-top: 12px;
     text-align: center;
     width: 100%; }
-    #sidebar .logo .logo-text {
+    .sidebar .logo .logo-text {
       display: inline-block;
       height: 20px;
       letter-spacing: .05em;
       position: relative;
       overflow: hidden;
       width: 12px; }
-      #sidebar .logo .logo-text:last-child {
+      .sidebar .logo .logo-text:last-child {
         margin-left: -4px; }
+  .sidebar .input-search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px; }
+    .sidebar .input-search:before {
+      left: 12px; }
+    .sidebar .input-search input {
+      opacity: 0;
+      width: 100%; }
+    .sidebar .input-search input:focus {
+      width: 200px; }
 
-#sidebar-nav {
+.sidebar-nav {
   height: 100%;
   overflow: hidden;
-  padding: 7px;
   padding-top: 10px;
   width: 100%; }
-  #sidebar-nav a {
+  .sidebar-nav a {
     color: white;
+    padding: 8px;
     white-space: nowrap; }
-  #sidebar-nav .label {
+  .sidebar-nav a.active,
+  .sidebar-nav a:hover {
+    background: #2F424D; }
+  .sidebar-nav .label {
     position: relative;
     top: -2px; }
-  #sidebar-nav i {
+  .sidebar-nav i {
     color: white;
     font-size: 18px;
     margin-right: 7px;
@@ -185,7 +199,7 @@ body.filter-open {
 
 .button {
   border-radius: 2px;
-  color: rgba(19, 25, 36, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -194,7 +208,7 @@ body.filter-open {
   .button:hover {
     color: white; }
   .button:active {
-    color: #131924; }
+    color: white; }
 
 .button.submit {
   background: #46cb65; }
@@ -221,7 +235,7 @@ nav a {
   font-weight: 600; }
 
 i {
-  color: #131924;
+  color: rgba(255, 255, 255, 0.7);
   margin-right: 5px; }
 
 .notifications a i {
@@ -238,11 +252,10 @@ input {
   width: 100%; }
 
 .input-search {
-  display: inline;
   position: relative; }
   .input-search:before {
     content: '\f002';
-    color: #131924;
+    color: rgba(255, 255, 255, 0.7);
     font-family: FontAwesome;
     font-size: 10px;
     left: 6px;
@@ -253,8 +266,7 @@ input {
     padding-left: 21px; }
 
 nav a {
-  display: block;
-  margin-bottom: 10px; }
+  display: block; }
 
 .notifications {
   height: 100%;

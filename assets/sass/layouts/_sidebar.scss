@@ -1,13 +1,24 @@
-#sidebar {
+.sidebar {
   @extend %transition-width;
-  background: $secondary;
-  border-right: 1px solid rgba(0,0,0,0.3);
+  background: #1E8BC3;
+  // border-right: 1px solid rgba(#FFF,0.1);
   height: 100%;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: $sidebar_width;
   z-index: 900;
+
+  &.subnav {
+    background: #2F424D;
+    left: $sidebar_width;
+    z-index: 800;
+
+
+    nav a.active,
+    nav a:hover { background: $body_bg; }
+  }
 
   &:hover {
     width: 150px;
@@ -15,10 +26,12 @@
     .logo-text { letter-spacing: 0em !important; }
     .logo-text:first-child { width: 80px; }
     .logo-text:last-child { width: 50px; }
+    .input-search input { opacity: 1; }
+    .input-search:before { color: #000; }
   }
 
   .logo {
-    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(#000,0.1);
     color: $secondary_text;
     float: left;
     height: $header_height;
@@ -28,7 +41,7 @@
     width: 100%;
 
     .logo-text {
-      @extend %transition-basic;
+      @extend %transition-width;
       display: inline-block;
       height: 20px;
       letter-spacing: .05em;
@@ -39,17 +52,28 @@
       &:last-child { margin-left: -4px; }
     }
   }
+
+  .input-search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 $pad_small;
+
+    &:before { @extend %transition-basic; left: 12px;}
+    input { @extend %transition-basic; opacity: 0; width: 100%; }
+    input:focus { width: 200px; }
+  }
 }
 
-#sidebar-nav {
+.sidebar-nav {
   @extend %transition-width;
   height: 100%;
   overflow: hidden;
-  padding: 7px;
   padding-top: $pad;
   width: 100%;
 
-  a { color: $secondary_text; white-space: nowrap; }
+  a { color: $secondary_text; padding: 8px; white-space: nowrap; }
+  a.active,
+  a:hover { background: #2F424D; }
   .label {position:relative; top:-2px;}
   i { color: $secondary_text; font-size: 18px; margin-right: 7px; width: 18px;}
 }
