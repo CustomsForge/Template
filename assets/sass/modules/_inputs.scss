@@ -1,26 +1,26 @@
 input {
   background: #E0E7E9;
   border: none;
+  color: $input_text;
   outline: 0;
   height: 20px;
   width: 100%;
 }
 
 .input-search {
+  color: $input_text;
   position: relative;
 
-  &:before {
-    content: '\f002';
-    color: #000;
-    font-family: FontAwesome;
-    font-size: 10px;
-    left: 6px;
+  .fa-search {
+    font-size: 12px;
+    left: $pad_small;
+    margin-top: -6px;
     position: absolute;
-    top: 6px;
+    top: 50%; 
   }
 
   input {
     border-radius: 0 0 4px 4px;
-    padding-left: 21px;
+    padding-left: 25px;
   }
 }

@@ -1,0 +1,22 @@
+.topbar {
+  height: $topbar_height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+
+  .input-search {
+    margin-left: -150px;
+    left: 50%;
+    position: absolute;
+    width: 300px;
+
+    input {
+      @extend %transition-height;
+      width: 100%;
+
+      &:focus { height: 30px; }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .sidebar {
   @extend %transition-width;
-  background: #1E8BC3;
-  // border-right: 1px solid rgba(#FFF,0.1);
+  background: $accent;
+  box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -10,32 +10,26 @@
   width: $sidebar_width;
   z-index: 900;
 
+  &:hover { width: $sidebar_width_open; }
+
+  nav { @extend %sidebar-nav; }
+
   &.subnav {
-    background: #2F424D;
+    background: $secondary;
     left: $sidebar_width;
     z-index: 800;
 
-
-    nav { margin-top: 114px; }
-    nav a.active,
-    nav a:hover { background: $body_bg; }
+    nav { @extend %subnav-nav; }
   }
+}
 
-  &:hover {
-    width: 150px;
-
-    .logo-text { letter-spacing: 0em !important; }
-    .logo-text:first-child { width: 80px; }
-    .logo-text:last-child { width: 50px; }
-    .input-search input { opacity: 1; }
-    .input-search:before { color: #000; }
-  }
-
+// --------
+// The logo
+// --------
+.sidebar {
   .logo {
-    border-bottom: 1px solid rgba(#000,0.2);
-    color: $secondary_text;
-    float: left;
-    height: $header_height;
+    border-bottom: $border-dark;
+    height: $topbar_height;
     margin-right: 10px;
     padding-top: 12px;
     text-align: center;
@@ -44,7 +38,7 @@
     .logo-text {
       @extend %transition-width;
       display: inline-block;
-      height: 20px;
+      line-height: 100%;
       letter-spacing: .05em;
       position: relative;
       overflow: hidden;
@@ -54,23 +48,57 @@
     }
   }
 
-  .user-box {
-    float: left;
-    border-right: 1px solid rgba(#000,0.2);
+  // On sidebar hover, expand logo
+  &:hover .logo-text {
+    letter-spacing: 0em !important;
+
+    &:first-child { width: 80px; }
+    &:last-child { width: 50px; }
   }
 }
 
-.sidebar-nav {
-  @extend %transition-width;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
 
-  a { color: $secondary_text; white-space: nowrap; 
-    border-bottom: 1px solid rgba(#000,0.2);}
-  a:first-child {border-top: 1px solid rgba(#000,0.2);}
-  a.active,
-  a:hover { background: #2F424D; }
-  .label {position:relative; top:-2px; font-size: 15px; font-weight: 400;}
-  i { color: $secondary_text; font-size: 20px; text-align: center; padding: 8px 0; width: $sidebar_width; }
+// -------------
+// The User Box
+// -------------
+.sidebar {
+  .user-box {
+    @include clearfix;
+    @extend %transition-basic;
+    height: $sidebar_width;
+    position: relative;
+    width: $sidebar_width_open;
+
+    &:hover {
+      height: 150px;
+    }
+
+    .alerts {
+      position: absolute;
+      text-align: center;
+      top: -8px;
+      width: $sidebar_width;
+
+      .alert {
+        display: inline-block;
+      }
+    }
+
+    .avatar {
+      border-right: $border-dark;
+      float: left;
+      height: $sidebar_width;
+      width: $sidebar_width + 1; // Offset border
+    }
+
+    .username {
+      line-height: $sidebar_width;
+      float: left;
+      overflow: hidden;
+      padding: 0 $pad;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: $sidebar_width_open - $sidebar_width - 1;
+    }
+  }
 }

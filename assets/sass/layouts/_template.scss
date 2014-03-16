@@ -1,44 +1,8 @@
-$header_height: 40px;
-$sidebar_width: 42px;
-
 body {
-  background: $body_bg;
+  background: $primary;
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
-  padding-left: $sidebar_width + $sidebar_width + $pad_large;
-  padding-top: $header_height + $pad;
-}
-
-#header {
-  color: $secondary_text;
-  height: $header_height;
-  left: 0;
-  padding: 0 $pad 0 $sidebar_width + $pad;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 500;
-
-  .input-search {
-    padding: 0 $pad_small;
-    margin-left: -150px;
-    left: 50%;
-    position: absolute;
-    width: 300px;
-
-    &:before { @extend %transition-basic; left: 10px; top: 50%; font-size: 12px; margin-top: -6px; }
-    input { @extend %transition-basic; width: 100%; font-size: 13px; padding-left: 25px; }
-    input:focus { height: 40px; }
-  }
-
-  .notifications {
-    float: left;
-    margin-right: 5px;
-  }
-}
-
-#footer {
-  text-align: center;
-  padding: 20px;
+  padding-left: $body_offset + $pad_large;
+  padding-top: $topbar_height + $pad;
 }

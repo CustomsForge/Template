@@ -1,6 +1,7 @@
 nav a {
   @extend %link-heavy;
   display: block;
+  text-transform: uppercase;
 }
 
 %nav-inline {
@@ -8,4 +9,37 @@ nav a {
     display: inline;
     margin-right: 5px;
   }
+}
+
+%sidebar-nav {
+  @extend %transition-width;
+  width: 100%;
+
+  a {
+    border-bottom: 1px solid rgba(#000,0.2);
+    white-space: nowrap;
+
+    &:first-child { border-top: 1px solid rgba(#000,0.2); }
+    &.active,
+    &:hover { background: $secondary; }
+
+    i {
+      font-size: 20px;
+      text-align: center;
+      padding: 8px 0;
+      width: $sidebar_width;
+    }
+    
+    .label {
+      font-size: 13px;
+      position:relative;
+      top:-2px;
+    }
+  }
+}
+
+%subnav-nav {
+  margin-top: $subnav_offset;
+  a.active,
+  a:hover { background: $primary; }
 }

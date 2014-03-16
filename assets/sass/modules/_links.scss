@@ -5,18 +5,6 @@ a {
   &:hover { color: $primary_link_hover; }
 }
 
-%secondary-link {
-  color: $secondary_link;
-  
-  i { @extend %icon-secondary; }
-  
-  &:hover {
-    color: $secondary_link_hover;
-
-    i { @extend %icon-secondary-hover; }
-  }
-}
-
 %link-heavy {
-  font-weight: 600;
+  font-weight: 800;
 }

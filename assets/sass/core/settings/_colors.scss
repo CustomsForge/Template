@@ -3,31 +3,19 @@ $red: #CC0000;
 $green: #46CB65;
 
 $primary: #22313F;
-$primary_alt: #EBEBEB;
-$primary_highlight: #D2D7D3;
-$primary_text: rgba(255,255,255,0.7);
-$primary_link: #131924;
+$primary_text: rgba(255,255,255,0.9);
+$primary_link: rgba(255,255,255,0.9);
 $primary_link_hover: $green;
 
-$secondary: #2574A9;
-$secondary_alt: #16a085;
-$secondary_text: #FFF;
-$secondary_link: #FFF;
-$secondary_link_hover: $green;
+$secondary: #2F424D;
 
-$accent: #95A5A6;
+$accent: #1E8BC3;
 
+$input_text: #000;
 
 // -----------------
 // Background colors
 // -----------------
-
-// Template
-$body_bg: $primary;
-$filter_bg: $primary_alt;
-$border: $primary_highlight;
-$header_bg: $accent;
-$sidebar_bg: $secondary;
 
 // Alerts
 $alert_warning: $red;
@@ -35,3 +23,9 @@ $alert_warning: $red;
 // Buttons
 $button_submit: $green;
 $button_cancel: $red;
+
+// ------------------
+// Borders
+// ------------------
+$border-dark: 1px solid rgba(0,0,0,0.2);
+$border-light: 1px solid rgba(255,255,255,0.2);

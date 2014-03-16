@@ -1,7 +1,5 @@
-%transition-basic {
-  transition: .23s all;
-}
+%transition-basic { transition: .23s all; }
 
-%transition-width {
-  transition: width .23s;
-}
+%transition-height { transition: height .23s; }
+
+%transition-width { transition: width .23s; }
