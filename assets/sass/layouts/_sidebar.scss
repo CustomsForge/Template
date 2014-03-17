@@ -13,7 +13,9 @@
   float: left;
   height: 100%;
   overflow: hidden;
+  position: relative;
   width: $sidebar_width;
+  z-index: 600;
 
   &:hover { width: $sidebar_width_open; }
 
@@ -21,7 +23,7 @@
 
   &.subnav {
     background: $secondary;
-    left: $sidebar_width;
+    z-index: 550;
 
     nav { @extend %subnav-nav; }
   }

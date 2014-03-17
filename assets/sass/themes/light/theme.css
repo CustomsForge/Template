@@ -108,12 +108,14 @@ body {
   float: left;
   height: 100%;
   overflow: hidden;
-  width: 42px; }
+  position: relative;
+  width: 42px;
+  z-index: 600; }
   .sidebar:hover {
     width: 150px; }
   .sidebar.subnav {
     background: #2f424d;
-    left: 42px; }
+    z-index: 550; }
 
 .sidebar .logo {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
