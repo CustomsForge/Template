@@ -20,7 +20,7 @@ body {
   font-size: 11px;
   height: $footer_height;
   margin-top: -$footer_height;
-  padding: $pad 0;
+  padding: $pad 0 0 $body_offset;
   text-align: center;
 
   nav {

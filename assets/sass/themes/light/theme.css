@@ -90,7 +90,7 @@ body {
   font-size: 11px;
   height: 52px;
   margin-top: -52px;
-  padding: 10px 0;
+  padding: 10px 0 0 84px;
   text-align: center; }
   #footer nav {
     padding-top: 10px; }
@@ -179,14 +179,14 @@ body {
 .topbar {
   height: 40px;
   left: 0;
+  padding-left: 84px;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 500; }
   .topbar .input-search {
-    margin-left: -150px;
-    left: 50%;
-    position: absolute;
+    display: inline-block;
     width: 300px; }
     .topbar .input-search input {
       width: 100%; }

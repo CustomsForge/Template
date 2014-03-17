@@ -1,15 +1,15 @@
 .topbar {
   height: $topbar_height;
   left: 0;
+  padding-left: $body_offset;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 500;
 
   .input-search {
-    margin-left: -150px;
-    left: 50%;
-    position: absolute;
+    display: inline-block;
     width: 300px;
 
     input {
