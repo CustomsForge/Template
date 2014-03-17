@@ -78,16 +78,20 @@ body {
   font-size: 13px; }
 
 #main {
+  min-height: 100%;
+  padding-bottom: 67px; }
+
+#content {
   padding-left: 99px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 50px; }
 
 #footer {
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  position: absolute; }
+  background: #1f2d3a;
+  font-size: 11px;
+  height: 52px;
+  margin-top: -52px;
+  padding: 10px 0;
+  text-align: center; }
   #footer nav {
     padding-top: 10px; }
 
@@ -95,7 +99,8 @@ body {
   height: 100%;
   left: 0;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 700; }
 
 .sidebar {
   background: #1e8bc3;
@@ -103,14 +108,12 @@ body {
   float: left;
   height: 100%;
   overflow: hidden;
-  width: 42px;
-  z-index: 900; }
+  width: 42px; }
   .sidebar:hover {
     width: 150px; }
   .sidebar.subnav {
     background: #2f424d;
-    left: 42px;
-    z-index: 800; }
+    left: 42px; }
 
 .sidebar .logo {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);

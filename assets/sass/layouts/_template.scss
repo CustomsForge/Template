@@ -6,17 +6,22 @@ body {
 }
 
 #main {
+  min-height: 100%;
+  padding-bottom: $footer_height + $pad_large;
+}
+
+#content {
   padding-left: $body_offset + $pad_large;
   padding-top: $topbar_height + $pad;
-  padding-bottom: $footer_height;
 }
 
 #footer {
+  background: $primary_alt;
+  font-size: 11px;
   height: $footer_height;
-  width: 100%;
+  margin-top: -$footer_height;
+  padding: $pad 0;
   text-align: center;
-  bottom: 0;
-  position: absolute;
 
   nav {
     @extend %nav-inline;

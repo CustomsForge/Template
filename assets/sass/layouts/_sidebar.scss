@@ -3,6 +3,7 @@
   left: 0;
   position: fixed;
   top: 0;
+  z-index: 700;
 }
 
 .sidebar {
@@ -13,7 +14,6 @@
   height: 100%;
   overflow: hidden;
   width: $sidebar_width;
-  z-index: 900;
 
   &:hover { width: $sidebar_width_open; }
 
@@ -22,7 +22,6 @@
   &.subnav {
     background: $secondary;
     left: $sidebar_width;
-    z-index: 800;
 
     nav { @extend %subnav-nav; }
   }
