@@ -65,6 +65,9 @@ html, body {
 .topbar .input-search input {
   transition: height 0.25s; }
 
+.sidebar .user-box .alert {
+  transition: left 0.25s, top 0.25s, bottom 0.25s, right 0.25s; }
+
 .sidebar, .sidebar .logo .logo-text, .sidebar nav {
   transition: width 0.25s; }
 
@@ -152,13 +155,11 @@ body {
   .sidebar .user-box:hover {
     background: rgba(47, 66, 77, 0.5);
     height: 150px; }
-  .sidebar .user-box .alerts {
+  .sidebar .user-box .alert {
+    border-radius: 0 0 0 3px;
     position: absolute;
-    text-align: center;
-    top: -8px;
-    width: 42px; }
-    .sidebar .user-box .alerts .alert {
-      display: inline-block; }
+    top: 0;
+    right: 108px; }
   .sidebar .user-box .avatar {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     float: left;
@@ -172,6 +173,8 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 107px; }
+.sidebar:hover .user-box .alert {
+  right: 0; }
 
 .topbar {
   height: 40px;

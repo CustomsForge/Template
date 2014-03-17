@@ -72,24 +72,21 @@
     transition: height $medium, background $medium;
     background: $accent;
     border-top: $border-dark;
-    height: $sidebar_width;
+    height: $user-box-height;
     position: relative;
     width: $sidebar_width_open;
 
     &:hover {
       background: rgba($secondary, .5);
-      height: 150px;
+      height: $user-box-height-open;
     }
 
-    .alerts {
+    .alert {
+      @extend %transition-position;
+      border-radius: 0 0 0 3px;
       position: absolute;
-      text-align: center;
-      top: -8px;
-      width: $sidebar_width;
-
-      .alert {
-        display: inline-block;
-      }
+      top: 0;
+      right: $sidebar_width_open - $sidebar_width;
     }
 
     .avatar {
@@ -108,5 +105,9 @@
       white-space: nowrap;
       width: $sidebar_width_open - $sidebar_width - 1;
     }
+  }
+
+  &:hover {
+    .user-box .alert { right: 0; }
   }
 }
