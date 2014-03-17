@@ -118,7 +118,6 @@ body {
     z-index: 550; }
 
 .sidebar .logo {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 40px;
   margin-right: 10px;
   padding-top: 12px;
@@ -142,6 +141,7 @@ body {
 
 .sidebar .user-box {
   *zoom: 1;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   height: 42px;
   position: relative;
   width: 150px; }

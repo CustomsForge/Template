@@ -34,7 +34,6 @@
 // --------
 .sidebar {
   .logo {
-    border-bottom: $border-dark;
     height: $topbar_height;
     margin-right: 10px;
     padding-top: 12px;
@@ -71,6 +70,7 @@
   .user-box {
     @include clearfix;
     @extend %transition-basic;
+    border-top: $border-dark;
     height: $sidebar_width;
     position: relative;
     width: $sidebar_width_open;
