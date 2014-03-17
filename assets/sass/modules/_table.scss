@@ -1,7 +1,7 @@
 @import "compass/utilities/tables";
 
   table.custom_table{
-  	color: #000000;
+  	color: #344960;
     $table-color: #E8EDEE;
     @include table-scaffolding;
     @include alternating-rows-and-columns(#DBE0E1, $table-color, none, $table-color, none);
