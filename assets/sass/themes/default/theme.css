@@ -62,10 +62,7 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.sidebar .user-box {
-  transition: .23s all; }
-
-.topbar .input-search input {
+.sidebar .user-box, .topbar .input-search input {
   transition: height .23s; }
 
 .sidebar, .sidebar .logo .logo-text, .sidebar nav {

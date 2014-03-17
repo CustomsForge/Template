@@ -69,7 +69,7 @@
 .sidebar {
   .user-box {
     @include clearfix;
-    @extend %transition-basic;
+    @extend %transition-height;
     border-top: $border-dark;
     height: $sidebar_width;
     position: relative;
