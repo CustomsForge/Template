@@ -1,5 +1,7 @@
-%transition-basic { transition: .23s all; }
+$fast: .15s;
+$medium: .25s;
+$slow: .5s;
 
-%transition-height { transition: height .23s; }
-
-%transition-width { transition: width .23s; }
+%transition-basic { transition: $medium all; }
+%transition-height { transition: height $medium; }
+%transition-width { transition: width $medium; }

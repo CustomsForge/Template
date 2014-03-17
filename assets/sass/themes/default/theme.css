@@ -62,11 +62,11 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.sidebar .user-box, .topbar .input-search input {
-  transition: height .23s; }
+.topbar .input-search input {
+  transition: height 0.25s; }
 
 .sidebar, .sidebar .logo .logo-text, .sidebar nav {
-  transition: width .23s; }
+  transition: width 0.25s; }
 
 body {
   background: #22313f;
@@ -138,6 +138,8 @@ body {
 
 .sidebar .user-box {
   *zoom: 1;
+  transition: height 0.25s, background 0.25s;
+  background: #1e8bc3;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   height: 42px;
   position: relative;
@@ -148,6 +150,7 @@ body {
   .sidebar .user-box:after {
     clear: both; }
   .sidebar .user-box:hover {
+    background: rgba(47, 66, 77, 0.5);
     height: 150px; }
   .sidebar .user-box .alerts {
     position: absolute;
@@ -279,7 +282,7 @@ nav a {
     .sidebar nav a:first-child {
       border-top: 1px solid rgba(0, 0, 0, 0.2); }
     .sidebar nav a.active, .sidebar nav a:hover {
-      background: #2f424d; }
+      background: rgba(47, 66, 77, 0.8); }
     .sidebar nav a i {
       font-size: 20px;
       text-align: center;
@@ -294,7 +297,7 @@ nav a {
   margin-top: 82px; }
   .sidebar.subnav nav a.active,
   .sidebar.subnav nav a:hover {
-    background: #22313f; }
+    background: rgba(34, 49, 63, 0.8); }
 
 .notifications {
   height: 100%;

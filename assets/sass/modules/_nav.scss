@@ -20,12 +20,12 @@ nav a {
   width: 100%;
 
   a {
-    border-bottom: 1px solid rgba(#000,0.2);
+    border-bottom: $border-dark;
     white-space: nowrap;
 
-    &:first-child { border-top: 1px solid rgba(#000,0.2); }
+    &:first-child { border-top: $border-dark; }
     &.active,
-    &:hover { background: $secondary; }
+    &:hover { background: rgba($secondary, .8); }
 
     i {
       font-size: 20px;
@@ -45,5 +45,5 @@ nav a {
 %subnav-nav {
   margin-top: $subnav_offset;
   a.active,
-  a:hover { background: $primary; }
+  a:hover { background: rgba($primary, .8); }
 }
