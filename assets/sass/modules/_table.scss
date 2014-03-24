@@ -15,7 +15,7 @@
     	}
     }
 
-    th.rating, td.rating {
+   th.rating, td.rating {
     	display: none;
     }
 
@@ -42,27 +42,31 @@
     	}
     
     td.diff{
-
+    	text-align: center;
     	}
     
     td.lead{
     	color:#46B865;
     	font-size:10px;
+    	text-align: center;
     	}
     
     td.rhythm{
     	color:#D38B8D;
     	font-size:10px;
+    	text-align: center;
     	}
     
     td.bass{
     	color:#889FD5;
     	font-size:10px;
+    	text-align: center;
     	}
     
     td.dd{
     	color:#FF9933;
     	font-size:10px;
+    	text-align: center;
     }
 
     }

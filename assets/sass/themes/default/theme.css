@@ -544,23 +544,31 @@ table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+/* line 44, ../../modules/_table.scss */
+table.custom_table td.diff {
+  text-align: center;
+}
 /* line 48, ../../modules/_table.scss */
 table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
+  text-align: center;
 }
-/* line 53, ../../modules/_table.scss */
+/* line 54, ../../modules/_table.scss */
 table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
+  text-align: center;
 }
-/* line 58, ../../modules/_table.scss */
+/* line 60, ../../modules/_table.scss */
 table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
+  text-align: center;
 }
-/* line 63, ../../modules/_table.scss */
+/* line 66, ../../modules/_table.scss */
 table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;
+  text-align: center;
 }
