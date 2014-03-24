@@ -477,7 +477,7 @@ nav a {
 
 /* line 3, ../../modules/_table.scss */
 table.custom_table {
-  color: #000000;
+  color: #131924;
 }
 /* line 2, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
 table.custom_table th {
@@ -525,4 +525,38 @@ table.custom_table tfoot th, table.custom_table tfoot td {
 /* line 21, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 table.custom_table tfoot th.even, table.custom_table tfoot th:nth-child(2n), table.custom_table tfoot td.even, table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
+}
+/* line 9, ../../modules/_table.scss */
+table.custom_table td.add {
+  color: #344960;
+  font-size: 18px;
+}
+/* line 13, ../../modules/_table.scss */
+table.custom_table td.add i.fa.fa-check-circle {
+  color: #46B865;
+}
+/* line 35, ../../modules/_table.scss */
+table.custom_table td.rating {
+  color: #DDD922;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* line 44, ../../modules/_table.scss */
+table.custom_table td.lead {
+  color: #46B865;
+  font-size: 10px;
+}
+/* line 49, ../../modules/_table.scss */
+table.custom_table td.rhythm {
+  color: #D38B8D;
+  font-size: 10px;
+}
+/* line 54, ../../modules/_table.scss */
+table.custom_table td.bass {
+  color: #889FD5;
+  font-size: 10px;
+}
+/* line 59, ../../modules/_table.scss */
+table.custom_table td.dd {
+  color: #FF9933;
+  font-size: 10px;
 }

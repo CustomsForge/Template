@@ -1,8 +1,65 @@
 @import "compass/utilities/tables";
 
   table.custom_table{
-  	color: #344960;
+  	color: #131924;
     $table-color: #E8EDEE;
     @include table-scaffolding;
     @include alternating-rows-and-columns(#DBE0E1, $table-color, none, $table-color, none);
+
+    td.add {
+    	color:#344960;
+    	font-size:18px;
+
+    	i.fa.fa-check-circle {
+    		color:#46B865;
+    	}
     }
+
+    td.title{
+
+    	}
+
+    td.album{
+
+    	}
+    
+    td.updated{
+
+    	}
+
+    
+    td.author{
+
+    	}
+    
+    td.rating{
+    	color:#DDD922;
+    	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    	}
+    
+    td.diff{
+
+    	}
+    
+    td.lead{
+    	color:#46B865;
+    	font-size:10px;
+    	}
+    
+    td.rhythm{
+    	color:#D38B8D;
+    	font-size:10px;
+    	}
+    
+    td.bass{
+    	color:#889FD5;
+    	font-size:10px;
+    	}
+    
+    td.dd{
+    	color:#FF9933;
+    	font-size:10px;
+    }
+
+    }
+
