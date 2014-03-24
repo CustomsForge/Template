@@ -72,127 +72,129 @@
   <div id="main">
     <div id="content">
       	<div id="filters">
-  		<span class="title">FILTERS</span>
-  		<form>
-  			<input type="checkbox" title="Guitar">Guitar<br />
-  			<input type="checkbox" title="Bass">Bass<br />
-  			<input type="checkbox" title="Dynamic Difficulty">Dynamic Difficulty<br />
-  			<br />
-  			Minimum Rating:
-  			<input type="range" title="Minimum Rating"><br />
-  			<br />
-  			Difficulty Range:<br />
-  			Min: <select name="min">
-  			<?php for ($i = 1; $i <= 10; $i++) : ?>
-  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-  			<?php endfor; ?>
-  			</select>
-  			Max: <select name="max">
-  			<?php for ($i = 1; $i <= 10; $i++) : ?>
-  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-  			<?php endfor; ?>
-  			</select><br />
-  			<br />
-  			<input type="reset" title="RESET">
-  		</form>
-  	</div>
-  	<div id="sort">
-  		<form>
-  			<select name="sort">
-  			<option>Artist</option>
-  			<option>Album</option>
-  			<option>Genre</option>
-  			</select>
-  		</form>
-  		<a href="">A</a>
-  		<a href="">B</a>
-  		<a href="">C</a>
-  		<a href="">D</a>
-  		<a href="">E</a>
-  		<a href="">F</a>
-  		<a href="">G</a>
-  		<a href="">H</a>
-  		<a href="">I</a>
-  		<a href="">J</a>
-  		<a href="">K</a>
-  		<a href="">L</a>
-  		<a href="">M</a>
-  		<a href="">N</a>
-  		<a href="">O</a>
-  		<a href="">P</a>
-  		<a href="">Q</a>
-  		<a href="">R</a>
-  		<a href="">S</a>
-  		<a href="">T</a>
-  		<a href="">U</a>
-  		<a href="">V</a>
-  		<a href="">W</a>
-  		<a href="">X</a>
-  		<a href="">Y</a>
-  		<a href="">Z</a>
-  	</div>
-  	<br/>
-      <span class="artist">Modest Mouse</span><br/>
-  <table class='custom_table'>
-    <thead>
-      <tr class='odd'>
-        <th class='add'>Add</th>
-        <th class='title'>Title</th>
-        <th class='album'>Album</th>
-        <th class='updated'>Updated At</th>
-        <th class='author'>Author</th>
-        <th class='rating'>Rating</th>
-        <th class='diff'>Difficulty</th>
-        <th class='lead'>L</th>
-        <th class='rhythm'>R</th>
-        <th class='bass'>B</th>
-        <th class='dd'>DD</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class='even'>
-        <td class='add'><i class="fa fa-check-circle"></i></td>
-		<td class='title'>The World at Large</td>
-		<td class='album'>Good News For Peopl...</td>
-		<td class='updated'>Feb. 4, 2013</td>
-		<td class='author'>Majere</td>
-		<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
-		<td class='diff'>10</td>
-		<td class='lead'><i class="fa fa-circle"></i></td>
-		<td class='rhythm'><i class="fa fa-circle"></i></td>
-		<td class='bass'><i class="fa fa-circle"></i></td>
-		<td class='dd'><i class="fa fa-circle"></i></td>
-      </tr>
-      <tr class='odd'>
-		<td class='add'><i class="fa fa-check-circle"></i></td>
-		<td class='title'>Float On</td>
-		<td class='album'>Good News For Peopl...</td>
-		<td class='updated'>Jan. 16, 2013</td>
-		<td class='author'>Buckshot</td>
-		<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
-		<td class='diff'>7</td>
-		<td class='lead'><i class="fa fa-circle"></i></td>
-		<td class='rhythm'><i class="fa fa-circle"></i></td>
-		<td class='bass'><i class="fa fa-circle"></i></td>
-		<td class='dd'><i class="fa fa-circle"></i></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr class='even'>
-		<td class='add'><i class="fa fa-plus-circle"></i></td>
-		<td class='title'>Ocean Breathes Salty</td>
-		<td class='album'>Good News For Peopl...</td>
-		<td  class='updated'>Dec. 28, 2012</td>
-		<td class='author'>Playa22</td>
-		<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
-		<td class='diff'>7</td>
-		<td class='lead'><i class="fa fa-circle"></i></td>
-		<td class='rhythm'><i class="fa fa-circle"></i></td>
-		<td class='bass'><i class="fa fa-circle"></i></td>
-		<td class='dd'><i class="fa fa-circle"></i></td>
-      </tr>
-    </tfoot>
-  </table>
+	  		<span class="title">FILTERS</span>
+	  		<form>
+	  			<input type="checkbox" title="Guitar">Guitar<br />
+	  			<input type="checkbox" title="Bass">Bass<br />
+	  			<input type="checkbox" title="Dynamic Difficulty">Dynamic Difficulty<br />
+	  			<br />
+	  			Minimum Rating:
+	  			<input type="range" title="Minimum Rating"><br />
+	  			<br />
+	  			Difficulty Range:<br />
+	  			Min: <select name="min">
+	  			<?php for ($i = 1; $i <= 10; $i++) : ?>
+	  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+	  			<?php endfor; ?>
+	  			</select>
+	  			Max: <select name="max">
+	  			<?php for ($i = 1; $i <= 10; $i++) : ?>
+	  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+	  			<?php endfor; ?>
+	  			</select><br />
+	  			<br />
+	  			<input type="reset" title="RESET">
+	  		</form>
+  		</div>
+	  	<div id="sort">
+	  		<form>
+	  			<select name="sort">
+	  			<option>Artist</option>
+	  			<option>Album</option>
+	  			<option>Genre</option>
+	  			</select>
+	  		</form>
+	  		<a href="">A</a>
+	  		<a href="">B</a>
+	  		<a href="">C</a>
+	  		<a href="">D</a>
+	  		<a href="">E</a>
+	  		<a href="">F</a>
+	  		<a href="">G</a>
+	  		<a href="">H</a>
+	  		<a href="">I</a>
+	  		<a href="">J</a>
+	  		<a href="">K</a>
+	  		<a href="">L</a>
+	  		<a href="">M</a>
+	  		<a href="">N</a>
+	  		<a href="">O</a>
+	  		<a href="">P</a>
+	  		<a href="">Q</a>
+	  		<a href="">R</a>
+	  		<a href="">S</a>
+	  		<a href="">T</a>
+	  		<a href="">U</a>
+	  		<a href="">V</a>
+	  		<a href="">W</a>
+	  		<a href="">X</a>
+	  		<a href="">Y</a>
+	  		<a href="">Z</a>
+	  	</div>
+	  	<br/>
+	  	<div id="table">
+		  <span class="artist">Modest Mouse</span><br/>
+		  <table class='custom_table'>
+		    <thead>
+		      <tr class='odd'>
+		        <th class='add'>Add</th>
+		        <th class='title'>Title</th>
+		        <th class='album'>Album</th>
+		        <th class='updated'>Updated At</th>
+		        <th class='author'>Author</th>
+		        <th class='rating'>Rating</th>
+		        <th class='diff'>Difficulty</th>
+		        <th class='lead'>L</th>
+		        <th class='rhythm'>R</th>
+		        <th class='bass'>B</th>
+		        <th class='dd'>DD</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr class='even'>
+		        <td class='add'><i class="fa fa-check-circle"></i></td>
+				<td class='title'>The World at Large</td>
+				<td class='album'>Good News For Peopl...</td>
+				<td class='updated'>Feb. 4, 2013</td>
+				<td class='author'>Majere</td>
+				<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
+				<td class='diff'>10</td>
+				<td class='lead'><i class="fa fa-circle"></i></td>
+				<td class='rhythm'><i class="fa fa-circle"></i></td>
+				<td class='bass'><i class="fa fa-circle"></i></td>
+				<td class='dd'><i class="fa fa-circle"></i></td>
+		      </tr>
+		      <tr class='odd'>
+				<td class='add'><i class="fa fa-check-circle"></i></td>
+				<td class='title'>Float On</td>
+				<td class='album'>Good News For Peopl...</td>
+				<td class='updated'>Jan. 16, 2013</td>
+				<td class='author'>Buckshot</td>
+				<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
+				<td class='diff'>7</td>
+				<td class='lead'><i class="fa fa-circle"></i></td>
+				<td class='rhythm'><i class="fa fa-circle"></i></td>
+				<td class='bass'><i class="fa fa-circle"></i></td>
+				<td class='dd'><i class="fa fa-circle"></i></td>
+		      </tr>
+		    </tbody>
+		    <tfoot>
+		      <tr class='even'>
+				<td class='add'><i class="fa fa-plus-circle"></i></td>
+				<td class='title'>Ocean Breathes Salty</td>
+				<td class='album'>Good News For Peopl...</td>
+				<td  class='updated'>Dec. 28, 2012</td>
+				<td class='author'>Playa22</td>
+				<td class='rating'><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></td>
+				<td class='diff'>7</td>
+				<td class='lead'><i class="fa fa-circle"></i></td>
+				<td class='rhythm'><i class="fa fa-circle"></i></td>
+				<td class='bass'><i class="fa fa-circle"></i></td>
+				<td class='dd'><i class="fa fa-circle"></i></td>
+		      </tr>
+		    </tfoot>
+		  </table>
+	  	</div>
     </div>
   </div>
 

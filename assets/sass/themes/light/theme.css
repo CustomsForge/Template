@@ -483,107 +483,111 @@ nav a {
 }
 
 /* line 3, ../../modules/_table.scss */
-span.artist {
+#table {
+  margin-left: 210px;
+}
+/* line 6, ../../modules/_table.scss */
+#table span.artist {
   color: #344960;
   font-size: 24px;
   font-weight: bold;
   text-decoration: capitalize;
 }
-
-/* line 10, ../../modules/_table.scss */
-table.custom_table {
+/* line 13, ../../modules/_table.scss */
+#table table.custom_table {
+  float: left;
   color: #131924;
   width: 100%;
 }
 /* line 2, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
-table.custom_table th {
+#table table.custom_table th {
   text-align: center;
   font-weight: bold;
 }
 /* line 6, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
-table.custom_table td,
-table.custom_table th {
+#table table.custom_table td,
+#table table.custom_table th {
   padding: 2px;
 }
 /* line 8, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
-table.custom_table td.numeric,
-table.custom_table th.numeric {
+#table table.custom_table td.numeric,
+#table table.custom_table th.numeric {
   text-align: right;
 }
 /* line 2, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table th {
+#table table.custom_table th {
   background-color: #e8edee;
 }
 /* line 4, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table th.even, table.custom_table th:nth-child(2n) {
+#table table.custom_table th.even, #table table.custom_table th:nth-child(2n) {
   background-color: #e8edee-none;
 }
 /* line 8, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tr.odd td, table.custom_table tr:nth-child(2n+1) td {
+#table table.custom_table tr.odd td, #table table.custom_table tr:nth-child(2n+1) td {
   background-color: #e8edee;
 }
 /* line 10, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tr.odd td.even, table.custom_table tr.odd td:nth-child(2n), table.custom_table tr:nth-child(2n+1) td.even, table.custom_table tr:nth-child(2n+1) td:nth-child(2n) {
+#table table.custom_table tr.odd td.even, #table table.custom_table tr.odd td:nth-child(2n), #table table.custom_table tr:nth-child(2n+1) td.even, #table table.custom_table tr:nth-child(2n+1) td:nth-child(2n) {
   background-color: #e8edee-none;
 }
 /* line 14, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tr.even td {
+#table table.custom_table tr.even td {
   background-color: #dbe0e1;
 }
 /* line 16, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tr.even td.even, table.custom_table tr.even td:nth-child(2n) {
+#table table.custom_table tr.even td.even, #table table.custom_table tr.even td:nth-child(2n) {
   background-color: #dbe0e1-none;
 }
 /* line 19, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tfoot th, table.custom_table tfoot td {
+#table table.custom_table tfoot th, #table table.custom_table tfoot td {
   background-color: none;
 }
 /* line 21, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
-table.custom_table tfoot th.even, table.custom_table tfoot th:nth-child(2n), table.custom_table tfoot td.even, table.custom_table tfoot td:nth-child(2n) {
+#table table.custom_table tfoot th.even, #table table.custom_table tfoot th:nth-child(2n), #table table.custom_table tfoot td.even, #table table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
 }
-/* line 17, ../../modules/_table.scss */
-table.custom_table td.add {
+/* line 21, ../../modules/_table.scss */
+#table table.custom_table td.add {
   color: #344960;
   font-size: 18px;
 }
-/* line 21, ../../modules/_table.scss */
-table.custom_table td.add i.fa.fa-check-circle {
+/* line 25, ../../modules/_table.scss */
+#table table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 26, ../../modules/_table.scss */
-table.custom_table th.rating, table.custom_table td.rating {
+/* line 30, ../../modules/_table.scss */
+#table table.custom_table th.rating, #table table.custom_table td.rating {
   display: none;
 }
-/* line 47, ../../modules/_table.scss */
-table.custom_table td.rating {
+/* line 51, ../../modules/_table.scss */
+#table table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 52, ../../modules/_table.scss */
-table.custom_table td.diff {
+/* line 56, ../../modules/_table.scss */
+#table table.custom_table td.diff {
   text-align: center;
 }
-/* line 56, ../../modules/_table.scss */
-table.custom_table td.lead {
+/* line 60, ../../modules/_table.scss */
+#table table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 62, ../../modules/_table.scss */
-table.custom_table td.rhythm {
+/* line 66, ../../modules/_table.scss */
+#table table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 68, ../../modules/_table.scss */
-table.custom_table td.bass {
+/* line 72, ../../modules/_table.scss */
+#table table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 74, ../../modules/_table.scss */
-table.custom_table td.dd {
+/* line 78, ../../modules/_table.scss */
+#table table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;
   text-align: center;
@@ -592,6 +596,7 @@ table.custom_table td.dd {
 /* line 1, ../../modules/_filters.scss */
 #filters {
   float: left;
+  position: absolute;
   height: 100%;
   width: 200px;
   margin-right: 10px;
@@ -599,28 +604,32 @@ table.custom_table td.dd {
   background: #DBE0E1;
   color: black;
 }
-/* line 10, ../../modules/_filters.scss */
+/* line 11, ../../modules/_filters.scss */
 #filters .title {
   text-align: center;
   font: 18px bold;
   text-decoration: capitalize;
 }
-/* line 16, ../../modules/_filters.scss */
+/* line 17, ../../modules/_filters.scss */
 #filters input {
   border: 0;
   padding: 0;
 }
-/* line 20, ../../modules/_filters.scss */
+/* line 21, ../../modules/_filters.scss */
 #filters input[type="checkbox"] {
   width: 0;
 }
-/* line 24, ../../modules/_filters.scss */
+/* line 25, ../../modules/_filters.scss */
 #filters input[type="range"] {
   position: relative;
   left: -10px;
 }
 
-/* line 2, ../../modules/_sort.scss */
+/* line 1, ../../modules/_sort.scss */
+#sort {
+  margin-left: 210px;
+}
+/* line 4, ../../modules/_sort.scss */
 #sort form {
   display: inline;
 }

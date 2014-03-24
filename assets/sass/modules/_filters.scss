@@ -1,7 +1,8 @@
 #filters {
 	float: left;
+	position: absolute;
 	height: 100%;
-	width: 200px;
+	width: $filter_width;
 	margin-right:$pad;
 	padding: $pad_small;
   	background: #DBE0E1;
