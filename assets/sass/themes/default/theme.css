@@ -483,6 +483,14 @@ nav a {
 }
 
 /* line 3, ../../modules/_table.scss */
+span.artist {
+  color: #344960;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: capitalize;
+}
+
+/* line 10, ../../modules/_table.scss */
 table.custom_table {
   color: #131924;
   width: 100%;
@@ -534,47 +542,47 @@ table.custom_table tfoot th, table.custom_table tfoot td {
 table.custom_table tfoot th.even, table.custom_table tfoot th:nth-child(2n), table.custom_table tfoot td.even, table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
 }
-/* line 10, ../../modules/_table.scss */
+/* line 17, ../../modules/_table.scss */
 table.custom_table td.add {
   color: #344960;
   font-size: 18px;
 }
-/* line 14, ../../modules/_table.scss */
+/* line 21, ../../modules/_table.scss */
 table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 19, ../../modules/_table.scss */
+/* line 26, ../../modules/_table.scss */
 table.custom_table th.rating, table.custom_table td.rating {
   display: none;
 }
-/* line 40, ../../modules/_table.scss */
+/* line 47, ../../modules/_table.scss */
 table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 45, ../../modules/_table.scss */
+/* line 52, ../../modules/_table.scss */
 table.custom_table td.diff {
   text-align: center;
 }
-/* line 49, ../../modules/_table.scss */
+/* line 56, ../../modules/_table.scss */
 table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 55, ../../modules/_table.scss */
+/* line 62, ../../modules/_table.scss */
 table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 61, ../../modules/_table.scss */
+/* line 68, ../../modules/_table.scss */
 table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 67, ../../modules/_table.scss */
+/* line 74, ../../modules/_table.scss */
 table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;

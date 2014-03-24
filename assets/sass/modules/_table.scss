@@ -1,5 +1,12 @@
 @import "compass/utilities/tables";
 
+span.artist {
+    color:#344960;
+    font-size:24px;
+    font-weight: bold;
+    text-decoration: capitalize;
+}
+
   table.custom_table{
   	color: #131924;
     $table-color: #E8EDEE;
