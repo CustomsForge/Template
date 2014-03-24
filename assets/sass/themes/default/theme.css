@@ -485,15 +485,16 @@ nav a {
 /* line 3, ../../modules/_table.scss */
 #table {
   margin-left: 210px;
+  margin-right: 5px;
 }
-/* line 6, ../../modules/_table.scss */
+/* line 7, ../../modules/_table.scss */
 #table span.artist {
   color: #344960;
   font-size: 24px;
   font-weight: bold;
   text-decoration: capitalize;
 }
-/* line 13, ../../modules/_table.scss */
+/* line 14, ../../modules/_table.scss */
 #table table.custom_table {
   float: left;
   color: #131924;
@@ -546,54 +547,54 @@ nav a {
 #table table.custom_table tfoot th.even, #table table.custom_table tfoot th:nth-child(2n), #table table.custom_table tfoot td.even, #table table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
 }
-/* line 21, ../../modules/_table.scss */
+/* line 22, ../../modules/_table.scss */
 #table table.custom_table thead {
   line-height: 30px;
   border-bottom: solid 1px #BCC1C3;
   margin-bottom: 5px;
 }
-/* line 27, ../../modules/_table.scss */
+/* line 28, ../../modules/_table.scss */
 #table table.custom_table td.add {
   color: #344960;
   font-size: 18px;
   text-align: center;
 }
-/* line 32, ../../modules/_table.scss */
+/* line 33, ../../modules/_table.scss */
 #table table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 37, ../../modules/_table.scss */
+/* line 38, ../../modules/_table.scss */
 #table table.custom_table th.rating, #table table.custom_table td.rating {
   display: none;
 }
-/* line 58, ../../modules/_table.scss */
+/* line 59, ../../modules/_table.scss */
 #table table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 63, ../../modules/_table.scss */
+/* line 64, ../../modules/_table.scss */
 #table table.custom_table td.diff {
   text-align: center;
 }
-/* line 67, ../../modules/_table.scss */
+/* line 68, ../../modules/_table.scss */
 #table table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 73, ../../modules/_table.scss */
+/* line 74, ../../modules/_table.scss */
 #table table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 79, ../../modules/_table.scss */
+/* line 80, ../../modules/_table.scss */
 #table table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 85, ../../modules/_table.scss */
+/* line 86, ../../modules/_table.scss */
 #table table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;
@@ -635,8 +636,26 @@ nav a {
 /* line 1, ../../modules/_sort.scss */
 #sort {
   margin-left: 210px;
+  margin-right: 5px;
+  padding-top: 5px;
+  line-height: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: solid 1px #BCC1C3;
 }
-/* line 4, ../../modules/_sort.scss */
-#sort form {
+/* line 11, ../../modules/_sort.scss */
+#sort form.sort {
+  float: left;
+  display: inline;
+}
+/* line 16, ../../modules/_sort.scss */
+#sort a {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 21, ../../modules/_sort.scss */
+#sort form.view {
+  float: right;
   display: inline;
 }

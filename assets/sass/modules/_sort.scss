@@ -1,7 +1,25 @@
 #sort {
 	margin-left: $filter_width + $pad;
+	margin-right: $pad_small;
+	padding-top: $pad_small;
+	line-height: 20px;
+	padding-bottom: 25px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: solid 1px #BCC1C3;
 
-	form {
-		 display:inline;
+	form.sort {
+		float: left;
+		 display: inline;
+	}
+
+	a {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+		form.view {
+		float: right;
+		 display: inline;
 	}
 }
