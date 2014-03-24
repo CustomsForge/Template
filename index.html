@@ -71,6 +71,66 @@
   
   <div id="main">
     <div id="content">
+      	<div id="filters">
+  		<span class="title">FILTERS</span>
+  		<form>
+  			<input type="checkbox" title="Guitar">Guitar<br />
+  			<input type="checkbox" title="Bass">Bass<br />
+  			<input type="checkbox" title="Dynamic Difficulty">Dynamic Difficulty<br />
+  			<br />
+  			Minimum Rating:
+  			<input type="range" title="Minimum Rating"><br />
+  			<br />
+  			Difficulty Range:<br />
+  			Min: <select name="min">
+  			<?php for ($i = 1; $i <= 10; $i++) : ?>
+  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+  			<?php endfor; ?>
+  			</select>
+  			Max: <select name="max">
+  			<?php for ($i = 1; $i <= 10; $i++) : ?>
+  				<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+  			<?php endfor; ?>
+  			</select><br />
+  			<br />
+  			<input type="reset" title="RESET">
+  		</form>
+  	</div>
+  	<div id="sort">
+  		<form>
+  			<select name="sort">
+  			<option>Artist</option>
+  			<option>Album</option>
+  			<option>Genre</option>
+  			</select>
+  		</form>
+  		<a href="">A</a>
+  		<a href="">B</a>
+  		<a href="">C</a>
+  		<a href="">D</a>
+  		<a href="">E</a>
+  		<a href="">F</a>
+  		<a href="">G</a>
+  		<a href="">H</a>
+  		<a href="">I</a>
+  		<a href="">J</a>
+  		<a href="">K</a>
+  		<a href="">L</a>
+  		<a href="">M</a>
+  		<a href="">N</a>
+  		<a href="">O</a>
+  		<a href="">P</a>
+  		<a href="">Q</a>
+  		<a href="">R</a>
+  		<a href="">S</a>
+  		<a href="">T</a>
+  		<a href="">U</a>
+  		<a href="">V</a>
+  		<a href="">W</a>
+  		<a href="">X</a>
+  		<a href="">Y</a>
+  		<a href="">Z</a>
+  	</div>
       I am the content of the page <br />
       I am the content of the page <br />
       I am the content of the page <br />

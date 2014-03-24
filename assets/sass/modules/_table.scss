@@ -3,6 +3,7 @@
   table.custom_table{
   	color: #131924;
     $table-color: #E8EDEE;
+    width: 100%;
     @include table-scaffolding;
     @include alternating-rows-and-columns(#DBE0E1, $table-color, none, $table-color, none);
 

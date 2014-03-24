@@ -100,7 +100,7 @@ html, body {
 /* line 1, ../../layouts/_template.scss */
 body {
   background: #22313f;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   font-family: 'Open Sans';
   font-size: 13px;
 }
@@ -109,15 +109,16 @@ body {
 #main {
   min-height: 100%;
   padding-bottom: 67px;
+  background: #e8edee;
 }
 
-/* line 13, ../../layouts/_template.scss */
+/* line 14, ../../layouts/_template.scss */
 #content {
-  padding-left: 99px;
-  padding-top: 50px;
+  padding-left: 89px;
+  padding-top: 45px;
 }
 
-/* line 18, ../../layouts/_template.scss */
+/* line 19, ../../layouts/_template.scss */
 #footer {
   background: #1f2d3a;
   font-size: 11px;
@@ -126,21 +127,26 @@ body {
   padding: 10px 0 0 84px;
   text-align: center;
 }
-/* line 26, ../../layouts/_template.scss */
+/* line 27, ../../layouts/_template.scss */
 #footer nav {
   padding-top: 10px;
 }
 
 /* line 1, ../../layouts/_sidebar.scss */
 #sidebars {
+  color: rgba(255, 255, 255, 0.9);
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
   z-index: 700;
 }
-
 /* line 9, ../../layouts/_sidebar.scss */
+#sidebars a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 14, ../../layouts/_sidebar.scss */
 .sidebar {
   background: #1e8bc3;
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
@@ -151,17 +157,17 @@ body {
   width: 42px;
   z-index: 600;
 }
-/* line 20, ../../layouts/_sidebar.scss */
+/* line 25, ../../layouts/_sidebar.scss */
 .sidebar:hover {
   width: 150px;
 }
-/* line 24, ../../layouts/_sidebar.scss */
+/* line 29, ../../layouts/_sidebar.scss */
 .sidebar.subnav {
   background: #2f424d;
   z-index: 550;
 }
 
-/* line 36, ../../layouts/_sidebar.scss */
+/* line 41, ../../layouts/_sidebar.scss */
 .sidebar .logo {
   height: 40px;
   margin-right: 10px;
@@ -169,7 +175,7 @@ body {
   text-align: center;
   width: 100%;
 }
-/* line 43, ../../layouts/_sidebar.scss */
+/* line 48, ../../layouts/_sidebar.scss */
 .sidebar .logo .logo-text {
   display: inline-block;
   line-height: 100%;
@@ -178,24 +184,24 @@ body {
   overflow: hidden;
   width: 12px;
 }
-/* line 52, ../../layouts/_sidebar.scss */
+/* line 57, ../../layouts/_sidebar.scss */
 .sidebar .logo .logo-text:last-child {
   margin-left: -4px;
 }
-/* line 57, ../../layouts/_sidebar.scss */
+/* line 62, ../../layouts/_sidebar.scss */
 .sidebar:hover .logo-text {
   letter-spacing: 0em !important;
 }
-/* line 60, ../../layouts/_sidebar.scss */
+/* line 65, ../../layouts/_sidebar.scss */
 .sidebar:hover .logo-text:first-child {
   width: 80px;
 }
-/* line 61, ../../layouts/_sidebar.scss */
+/* line 66, ../../layouts/_sidebar.scss */
 .sidebar:hover .logo-text:last-child {
   width: 50px;
 }
 
-/* line 70, ../../layouts/_sidebar.scss */
+/* line 75, ../../layouts/_sidebar.scss */
 .sidebar .user-box {
   *zoom: 1;
   transition: height 0.25s, background 0.25s;
@@ -214,26 +220,26 @@ body {
 .sidebar .user-box:after {
   clear: both;
 }
-/* line 79, ../../layouts/_sidebar.scss */
+/* line 84, ../../layouts/_sidebar.scss */
 .sidebar .user-box:hover {
   background: rgba(47, 66, 77, 0.5);
   height: 150px;
 }
-/* line 84, ../../layouts/_sidebar.scss */
+/* line 89, ../../layouts/_sidebar.scss */
 .sidebar .user-box .alert {
   border-radius: 0 0 0 3px;
   position: absolute;
   top: 0;
   right: 108px;
 }
-/* line 92, ../../layouts/_sidebar.scss */
+/* line 97, ../../layouts/_sidebar.scss */
 .sidebar .user-box .avatar {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   float: left;
   height: 42px;
   width: 43px;
 }
-/* line 99, ../../layouts/_sidebar.scss */
+/* line 104, ../../layouts/_sidebar.scss */
 .sidebar .user-box .username {
   line-height: 42px;
   float: left;
@@ -243,7 +249,7 @@ body {
   white-space: nowrap;
   width: 107px;
 }
-/* line 111, ../../layouts/_sidebar.scss */
+/* line 116, ../../layouts/_sidebar.scss */
 .sidebar:hover .user-box .alert {
   right: 0;
 }
@@ -258,17 +264,18 @@ body {
   top: 0;
   width: 100%;
   z-index: 500;
+  background: #22313f;
 }
-/* line 11, ../../layouts/_topbar.scss */
+/* line 12, ../../layouts/_topbar.scss */
 .topbar .input-search {
   display: inline-block;
   width: 300px;
 }
-/* line 15, ../../layouts/_topbar.scss */
+/* line 16, ../../layouts/_topbar.scss */
 .topbar .input-search input {
   width: 100%;
 }
-/* line 19, ../../layouts/_topbar.scss */
+/* line 20, ../../layouts/_topbar.scss */
 .topbar .input-search input:focus {
   height: 30px;
 }
@@ -302,7 +309,7 @@ body {
 /* line 1, ../../modules/_buttons.scss */
 .button {
   border-radius: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -311,11 +318,11 @@ body {
 }
 /* line 10, ../../modules/_buttons.scss */
 .button:hover {
-  color: white;
+  color: black;
 }
 /* line 11, ../../modules/_buttons.scss */
 .button:active {
-  color: white;
+  color: black;
 }
 
 /* line 14, ../../modules/_buttons.scss */
@@ -336,7 +343,7 @@ h1 {
 
 /* line 1, ../../modules/_links.scss */
 a {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
 }
 /* line 5, ../../modules/_links.scss */
@@ -478,6 +485,7 @@ nav a {
 /* line 3, ../../modules/_table.scss */
 table.custom_table {
   color: #131924;
+  width: 100%;
 }
 /* line 2, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
 table.custom_table th {
@@ -526,49 +534,85 @@ table.custom_table tfoot th, table.custom_table tfoot td {
 table.custom_table tfoot th.even, table.custom_table tfoot th:nth-child(2n), table.custom_table tfoot td.even, table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
 }
-/* line 9, ../../modules/_table.scss */
+/* line 10, ../../modules/_table.scss */
 table.custom_table td.add {
   color: #344960;
   font-size: 18px;
 }
-/* line 13, ../../modules/_table.scss */
+/* line 14, ../../modules/_table.scss */
 table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 18, ../../modules/_table.scss */
+/* line 19, ../../modules/_table.scss */
 table.custom_table th.rating, table.custom_table td.rating {
   display: none;
 }
-/* line 39, ../../modules/_table.scss */
+/* line 40, ../../modules/_table.scss */
 table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 44, ../../modules/_table.scss */
+/* line 45, ../../modules/_table.scss */
 table.custom_table td.diff {
   text-align: center;
 }
-/* line 48, ../../modules/_table.scss */
+/* line 49, ../../modules/_table.scss */
 table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 54, ../../modules/_table.scss */
+/* line 55, ../../modules/_table.scss */
 table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 60, ../../modules/_table.scss */
+/* line 61, ../../modules/_table.scss */
 table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 66, ../../modules/_table.scss */
+/* line 67, ../../modules/_table.scss */
 table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;
   text-align: center;
+}
+
+/* line 1, ../../modules/_filters.scss */
+#filters {
+  float: left;
+  height: 100%;
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px;
+  background: #DBE0E1;
+  color: black;
+}
+/* line 10, ../../modules/_filters.scss */
+#filters .title {
+  text-align: center;
+  font: 18px bold;
+  text-decoration: capitalize;
+}
+/* line 16, ../../modules/_filters.scss */
+#filters input {
+  border: 0;
+  padding: 0;
+}
+/* line 20, ../../modules/_filters.scss */
+#filters input[type="checkbox"] {
+  width: 0;
+}
+/* line 24, ../../modules/_filters.scss */
+#filters input[type="range"] {
+  position: relative;
+  left: -10px;
+}
+
+/* line 2, ../../modules/_sort.scss */
+#sort form {
+  display: inline;
 }

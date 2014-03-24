@@ -1,0 +1,31 @@
+#filters {
+	float: left;
+	height: 100%;
+	width: 200px;
+	margin-right:$pad;
+	padding: $pad_small;
+  	background: #DBE0E1;
+  	color: black;
+
+	.title {
+		text-align: center;
+		font: 18px bold;
+		text-decoration: capitalize;
+	}
+
+	input {
+		border: 0;
+		padding: 0;
+
+		&[type="checkbox"] {
+			width: 0;
+		}
+
+		&[type="range"] {
+			position: relative;
+			left: -$pad;
+		}
+	}
+
+
+}

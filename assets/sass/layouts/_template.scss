@@ -8,11 +8,12 @@ body {
 #main {
   min-height: 100%;
   padding-bottom: $footer_height + $pad_large;
+  background: $beige;
 }
 
 #content {
-  padding-left: $body_offset + $pad_large;
-  padding-top: $topbar_height + $pad;
+  padding-left: $body_offset + $pad_small;
+  padding-top: $topbar_height + $pad_small;
 }
 
 #footer {
