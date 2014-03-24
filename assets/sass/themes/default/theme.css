@@ -547,46 +547,53 @@ nav a {
   background-color: none-none;
 }
 /* line 21, ../../modules/_table.scss */
+#table table.custom_table thead {
+  line-height: 30px;
+  border-bottom: solid 1px #BCC1C3;
+  margin-bottom: 5px;
+}
+/* line 27, ../../modules/_table.scss */
 #table table.custom_table td.add {
   color: #344960;
   font-size: 18px;
+  text-align: center;
 }
-/* line 25, ../../modules/_table.scss */
+/* line 32, ../../modules/_table.scss */
 #table table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 30, ../../modules/_table.scss */
+/* line 37, ../../modules/_table.scss */
 #table table.custom_table th.rating, #table table.custom_table td.rating {
   display: none;
 }
-/* line 51, ../../modules/_table.scss */
+/* line 58, ../../modules/_table.scss */
 #table table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 56, ../../modules/_table.scss */
+/* line 63, ../../modules/_table.scss */
 #table table.custom_table td.diff {
   text-align: center;
 }
-/* line 60, ../../modules/_table.scss */
+/* line 67, ../../modules/_table.scss */
 #table table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 66, ../../modules/_table.scss */
+/* line 73, ../../modules/_table.scss */
 #table table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 72, ../../modules/_table.scss */
+/* line 79, ../../modules/_table.scss */
 #table table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 78, ../../modules/_table.scss */
+/* line 85, ../../modules/_table.scss */
 #table table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;

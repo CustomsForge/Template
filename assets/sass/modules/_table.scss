@@ -18,9 +18,16 @@
         @include table-scaffolding;
         @include alternating-rows-and-columns(#DBE0E1, $table-color, none, $table-color, none);
 
+        thead {
+            line-height: 30px;
+            border-bottom: solid 1px #BCC1C3;
+            margin-bottom: 5px;
+        }
+
         td.add {
         	color:#344960;
         	font-size:18px;
+            text-align: center;
 
         	i.fa.fa-check-circle {
         		color:#46B865;
