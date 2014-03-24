@@ -564,6 +564,10 @@ nav a {
 #table table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
+/* line 39, ../../modules/_table.scss */
+#table table.custom_table th.rating, #table table.custom_table td.rating {
+  display: none;
+}
 /* line 60, ../../modules/_table.scss */
 #table table.custom_table td.rating {
   color: #DDD922;
