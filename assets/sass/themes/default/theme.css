@@ -499,6 +499,7 @@ nav a {
   float: left;
   color: #131924;
   width: 100%;
+  margin-bottom: 20px;
 }
 /* line 2, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
 #table table.custom_table th {
@@ -547,54 +548,50 @@ nav a {
 #table table.custom_table tfoot th.even, #table table.custom_table tfoot th:nth-child(2n), #table table.custom_table tfoot td.even, #table table.custom_table tfoot td:nth-child(2n) {
   background-color: none-none;
 }
-/* line 22, ../../modules/_table.scss */
+/* line 23, ../../modules/_table.scss */
 #table table.custom_table thead {
   line-height: 30px;
   border-bottom: solid 1px #BCC1C3;
   margin-bottom: 5px;
 }
-/* line 28, ../../modules/_table.scss */
+/* line 29, ../../modules/_table.scss */
 #table table.custom_table td.add {
   color: #344960;
   font-size: 18px;
   text-align: center;
 }
-/* line 33, ../../modules/_table.scss */
+/* line 34, ../../modules/_table.scss */
 #table table.custom_table td.add i.fa.fa-check-circle {
   color: #46B865;
 }
-/* line 38, ../../modules/_table.scss */
-#table table.custom_table th.rating, #table table.custom_table td.rating {
-  display: none;
-}
-/* line 59, ../../modules/_table.scss */
+/* line 60, ../../modules/_table.scss */
 #table table.custom_table td.rating {
   color: #DDD922;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 64, ../../modules/_table.scss */
+/* line 65, ../../modules/_table.scss */
 #table table.custom_table td.diff {
   text-align: center;
 }
-/* line 68, ../../modules/_table.scss */
+/* line 69, ../../modules/_table.scss */
 #table table.custom_table td.lead {
   color: #46B865;
   font-size: 10px;
   text-align: center;
 }
-/* line 74, ../../modules/_table.scss */
+/* line 75, ../../modules/_table.scss */
 #table table.custom_table td.rhythm {
   color: #D38B8D;
   font-size: 10px;
   text-align: center;
 }
-/* line 80, ../../modules/_table.scss */
+/* line 81, ../../modules/_table.scss */
 #table table.custom_table td.bass {
   color: #889FD5;
   font-size: 10px;
   text-align: center;
 }
-/* line 86, ../../modules/_table.scss */
+/* line 87, ../../modules/_table.scss */
 #table table.custom_table td.dd {
   color: #FF9933;
   font-size: 10px;

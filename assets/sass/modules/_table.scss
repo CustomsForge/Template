@@ -16,6 +16,7 @@
       	color: #131924;
         $table-color: #E8EDEE;
         width: 100%;
+        margin-bottom: 20px;
         @include table-scaffolding;
         @include alternating-rows-and-columns(#DBE0E1, $table-color, none, $table-color, none);
 
@@ -36,7 +37,7 @@
         }
 
        th.rating, td.rating {
-        	display: none;
+        	//display: none;
         }
 
         td.title{
