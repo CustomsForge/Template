@@ -1,10 +1,13 @@
 // Global Colors
 $red: #CC0000;
 $green: #46CB65;
+$blue: rgb(105, 180, 209);
+$orange: rgb(223, 176, 90);
 
 // The Body
 $primary: #22313F;
 $primary_alt: #1F2D3A;
+$primary_highlight: rgba(255,255,255,0.05);
 $primary_text: rgba(255,255,255,0.9);
 $primary_link: rgba(255,255,255,0.9);
 $primary_link_hover: $green;
@@ -31,8 +34,14 @@ $alert_warning: $red;
 $button_submit: $green;
 $button_cancel: $red;
 
+// Indicators
+$indicator_lead: $green;
+$indicator_rhythm: $red;
+$indicator_bass: $blue;
+$indicator_dynamic_difficulty: $orange;
+
 // ------------------
 // Borders
 // ------------------
 $border-dark: 1px solid rgba(0,0,0,0.2);
-$border-light: 1px solid rgba(255,255,255,0.2);
+$border-light: 1px solid rgba(255,255,255,0.05);

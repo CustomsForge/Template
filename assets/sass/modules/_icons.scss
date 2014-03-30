@@ -1,3 +1,31 @@
-i {
-  color: inherit;
+i { color: inherit; }
+
+
+// ----------
+// Indicators
+// ----------
+i.indicator {
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+
+  &.false { background: none !important; }
+}
+
+.bass i.indicator {
+  background: $indicator_bass;
+  border: 1px solid $indicator_bass;
+}
+.lead i.indicator {
+  background: $indicator_lead;
+  border: 1px solid $indicator_lead;
+}
+.rhythm i.indicator {
+  background: $indicator_rhythm;
+  border: 1px solid $indicator_rhythm;
+}
+.dynamic_difficulty i.indicator {
+  background: $indicator_dynamic_difficulty;
+  border: 1px solid $indicator_dynamic_difficulty;
 }

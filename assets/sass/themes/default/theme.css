@@ -87,6 +87,7 @@ body {
 
 #content {
   padding-left: 99px;
+  padding-right: 15px;
   padding-top: 50px; }
 
 #footer {
@@ -260,6 +261,12 @@ form fieldset {
     display: block;
     margin-bottom: 5px; }
 
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 15px 0 10px; }
+
 a {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none; }
@@ -273,6 +280,30 @@ a {
 
 i {
   color: inherit; }
+
+i.indicator {
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px; }
+  i.indicator.false {
+    background: none !important; }
+
+.bass i.indicator {
+  background: #69b4d1;
+  border: 1px solid #69b4d1; }
+
+.lead i.indicator {
+  background: #46cb65;
+  border: 1px solid #46cb65; }
+
+.rhythm i.indicator {
+  background: #cc0000;
+  border: 1px solid #cc0000; }
+
+.dynamic_difficulty i.indicator {
+  background: #dfb05a;
+  border: 1px solid #dfb05a; }
 
 input {
   background: #e0e7e9;
@@ -342,10 +373,12 @@ input {
 
 .navbar nav a, .navbar .user-box .user-nav a {
   border-top: 1px solid rgba(0, 0, 0, 0.2); }
-  .navbar nav a:last-child, .navbar .user-box .user-nav a:last-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .navbar nav a.active, .navbar .user-box .user-nav a.active, .navbar nav a:hover, .navbar .user-box .user-nav a:hover {
-    background: rgba(47, 66, 77, 0.8); }
+    background: rgba(47, 66, 77, 0.8);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+  .navbar nav a:last-child, .navbar .user-box .user-nav a:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none; }
 
 .navbar nav, .navbar .user-box .user-nav {
   font-size: 13px; }
@@ -374,6 +407,48 @@ input {
   .notifications .alert {
     left: -8px;
     top: -11px; }
+
+table {
+  width: 100%; }
+  table thead {
+    font-size: 10px;
+    text-align: left; }
+    table thead th {
+      border-bottom: 1px solid #1f2d3a;
+      padding: 5px; }
+  table tbody td {
+    padding: 10px 5px; }
+  table tbody tr:nth-child(2n) td {
+    background: #1f2d3a; }
+  table tbody tr:hover td {
+    background: rgba(255, 255, 255, 0.05); }
+
+table .add {
+  text-align: center;
+  width: 30px; }
+  table .add i {
+    cursor: pointer;
+    font-size: 16px; }
+  table .add i.fa-plus-circle:hover {
+    color: #46cb65; }
+  table .add i.fa-check-circle {
+    color: #46cb65; }
+  table .add i.fa-check-circle:hover {
+    color: #cc0000; }
+table .title {
+  min-width: 100px; }
+table .album {
+  min-width: 50px; }
+table .updated_at {
+  width: 100px; }
+table .author {
+  width: 80px; }
+table .lead,
+table .rhythm,
+table .dynamic_difficulty,
+table .bass {
+  text-align: center;
+  width: 30px; }
 
 .user-card {
   cursor: pointer;

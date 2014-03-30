@@ -13,6 +13,7 @@ body {
 
 #content {
   padding-left: $body_offset + $pad_large;
+  padding-right: $pad_large;
   padding-top: $topbar_height + $pad;
 }
 

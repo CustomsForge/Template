@@ -1,0 +1,45 @@
+table {
+  width: 100%;
+
+  thead {
+    font-size: 10px;
+    text-align: left;
+
+    th {
+      border-bottom: 1px solid $primary_alt;
+      padding: 5px;
+    }
+  }
+
+  tbody {
+    td { padding: 10px 5px; }
+    tr:nth-child(2n) td { background: $primary_alt; }
+    tr:hover td { background: $primary_highlight; }
+  }
+}
+
+// --------------
+// Special Widths
+// --------------
+table {
+  .add {
+    text-align: center;
+    width: 30px;
+
+    i { cursor: pointer; font-size: 16px; }
+    i.fa-plus-circle:hover { color: $green; }
+    i.fa-check-circle { color: $green; }
+    i.fa-check-circle:hover { color: $red; }
+  }
+  .title { min-width: 100px; }
+  .album { min-width: 50px; }
+  .updated_at { width: 100px; }
+  .author { width: 80px; }
+  .lead,
+  .rhythm,
+  .dynamic_difficulty,
+  .bass {
+    text-align: center;
+    width: 30px;
+  }
+}

@@ -34,9 +34,14 @@
 %nav-buttons {
   a {
     border-top: $border-dark;
-    &:last-child { border-bottom: $border-dark; }
     &.active,
-    &:hover { background: rgba($secondary, .8); }
+    &:hover {
+      background: rgba($secondary, .8);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    }
+
+    &:last-child { border-bottom: $border-dark; box-shadow: none; }
+      
   }
 }
 
