@@ -37,6 +37,7 @@ table {
     i.fa-check-circle { color: $green; }
     i.fa-check-circle:hover { color: $red; }
   }
+  .artist { min-width: 100px; }
   .title { min-width: 100px; }
   .album { min-width: 50px; }
   .updated_at { width: 100px; }
@@ -52,9 +53,16 @@ table {
   .bass {
     padding: $pad_small 0;
     text-align: center;
-    width: 26px;
+    width: 24px;
   }
 
   td.playstation { color: $platform_playstation; }
   td.xbox { color: $platform_xbox; }
+
+
+  .lead,
+  .rhythm,
+  .bass {
+    padding: $pad_small 2px;
+  }
 }

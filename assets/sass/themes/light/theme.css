@@ -302,9 +302,6 @@ i.indicator {
   display: inline-block;
   height: 8px;
   width: 8px; }
-  i.indicator.false {
-    background: none !important;
-    opacity: .5; }
 
 .bass i.indicator {
   background: #69b4d1;
@@ -455,6 +452,8 @@ table .add {
     color: #46cb65; }
   table .add i.fa-check-circle:hover {
     color: #cc0000; }
+table .artist {
+  min-width: 100px; }
 table .title {
   min-width: 100px; }
 table .album {
@@ -473,11 +472,15 @@ table .dynamic_difficulty,
 table .bass {
   padding: 5px 0;
   text-align: center;
-  width: 26px; }
+  width: 24px; }
 table td.playstation {
   color: #665cbe; }
 table td.xbox {
   color: #52b043; }
+table .lead,
+table .rhythm,
+table .bass {
+  padding: 5px 2px; }
 
 .user-card {
   cursor: pointer;

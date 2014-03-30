@@ -9,11 +9,6 @@ i.indicator {
   display: inline-block;
   height: 8px;
   width: 8px;
-
-  &.false {
-    background: none !important;
-    opacity: .5;
-  }
 }
 
 .bass i.indicator {
