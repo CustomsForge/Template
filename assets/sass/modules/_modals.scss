@@ -1,0 +1,32 @@
+.lightbox {
+  background: rgba(#000, 0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+}
+
+.modal {
+  margin: 100px auto 0;
+  min-width: 400px;
+  width: 50%;
+
+  .modal-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .modal-content {
+    input { @extend %input-large; }
+    input + input { margin-top: 20px; }
+  }
+
+  .modal-footer {
+    margin-top: 10px;
+    text-align: center;
+
+    .button { margin: 0 5px; }
+  }
+}

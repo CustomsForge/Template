@@ -1,4 +1,5 @@
-#sidebars {
+// The Wrapper
+#navigation {
   height: 100%;
   left: 0;
   position: fixed;
@@ -6,7 +7,8 @@
   z-index: 700;
 }
 
-.sidebar {
+// Inner navbars
+.navbar {
   @extend %transition-width;
   background: $accent;
   box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
@@ -32,15 +34,17 @@
 // --------
 // The logo
 // --------
-.sidebar {
+.navbar {
   .logo {
+    font-family: 'Fugaz One';
+    font-size: 18px;
     height: $topbar_height;
     margin-right: 10px;
     padding-top: 12px;
     text-align: center;
     width: 100%;
 
-    .logo-text {
+    span {
       @extend %transition-width;
       display: inline-block;
       line-height: 100%;
@@ -54,7 +58,7 @@
   }
 
   // On sidebar hover, expand logo
-  &:hover .logo-text {
+  &:hover span {
     letter-spacing: 0em !important;
 
     &:first-child { width: 80px; }
@@ -66,13 +70,14 @@
 // -------------
 // The User Box
 // -------------
-.sidebar {
+.navbar {
   .user-box {
     @include clearfix;
     transition: height $medium, background $medium;
     background: $accent;
     border-top: $border-dark;
     height: $user-box-height;
+    overflow: hidden;
     position: relative;
     width: $sidebar_width_open;
 
@@ -81,33 +86,37 @@
       height: $user-box-height-open;
     }
 
-    .alert {
-      @extend %transition-position;
-      border-radius: 0 0 0 3px;
-      position: absolute;
-      top: 0;
-      right: $sidebar_width_open - $sidebar_width;
-    }
-
-    .avatar {
-      border-right: $border-dark;
-      float: left;
+    .user-info {
       height: $sidebar_width;
-      width: $sidebar_width + 1; // Offset border
+      
+      .alert {
+        @extend %transition-position;
+        border-radius: 0 0 0 3px;
+        position: absolute;
+        top: 0;
+        right: $sidebar_width_open - $sidebar_width;
+      }
+
+      .avatar {
+        border-right: $border-dark;
+        float: left;
+        height: $sidebar_width;
+        width: $sidebar_width + 1; // Offset border
+      }
+
+      .username {
+        line-height: $sidebar_width;
+        float: left;
+        overflow: hidden;
+        padding: 0 $pad;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: $sidebar_width_open - $sidebar_width - 1;
+      }
     }
 
-    .username {
-      line-height: $sidebar_width;
-      float: left;
-      overflow: hidden;
-      padding: 0 $pad;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: $sidebar_width_open - $sidebar_width - 1;
-    }
+    .user-nav { @extend %sidebar-nav; }
   }
 
-  &:hover {
-    .user-box .alert { right: 0; }
-  }
+  &:hover .user-box .alert { right: 0; }
 }

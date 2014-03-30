@@ -3,6 +3,7 @@ a {
   text-decoration: none;
 
   &:hover { color: $primary_link_hover; }
+  &:active { color: $primary_link_active; }
 }
 
 %link-heavy {

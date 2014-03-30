@@ -1,0 +1,11 @@
+form {
+  fieldset {
+    margin-bottom: $pad_large;
+    width: 200px;
+
+    label { 
+      display: block;
+      margin-bottom: $pad_small;
+    }
+  }
+}

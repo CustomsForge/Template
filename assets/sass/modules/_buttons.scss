@@ -1,14 +1,18 @@
 .button {
   border-radius: 2px;
-  color: rgba($primary_text, .3);
+  color: rgba($secondary_text, .3);
   cursor: pointer;
   display: inline-block;
-  font-weight: 600;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 800;
+  outline: 0;
   padding: 6px 18px 4px;
   text-transform: uppercase;
 
   &:hover { color: rgba($primary_text, 1); }
-  &:active { color: rgba($primary_text, 1); }
+  &:active { color: rgba($primary_text, .7); }
+  &button { padding-top: 4px; }
 }
 
 .button.submit {

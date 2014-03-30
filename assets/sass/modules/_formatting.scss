@@ -1,0 +1,15 @@
+%format-icon-label {
+  display: block;
+  line-height: 1.5em;
+
+  i {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 .4em;
+  }
+  
+  span {
+    position: relative;
+    top: -2px;
+  }
+}

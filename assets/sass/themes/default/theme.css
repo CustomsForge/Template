@@ -57,25 +57,29 @@ table {
 html, body {
   height: 100%; }
 
+button {
+  border: 0; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.topbar .input-search input {
+#topbar .input-search input {
   transition: height 0.25s; }
 
-.sidebar .user-box .alert {
+.navbar .user-box .user-info .alert {
   transition: left 0.25s, top 0.25s, bottom 0.25s, right 0.25s; }
 
-.sidebar, .sidebar .logo .logo-text, .sidebar nav {
+.navbar, .navbar .logo span {
   transition: width 0.25s; }
 
 body {
   background: #22313f;
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Open Sans';
-  font-size: 13px; }
+  font-size: 13px;
+  min-height: 500px; }
 
 #main {
   min-height: 100%;
@@ -92,17 +96,15 @@ body {
   margin-top: -52px;
   padding: 10px 0 0 84px;
   text-align: center; }
-  #footer nav {
-    padding-top: 10px; }
 
-#sidebars {
+#navigation {
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
   z-index: 700; }
 
-.sidebar {
+.navbar {
   background: #1e8bc3;
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
   float: left;
@@ -111,72 +113,77 @@ body {
   position: relative;
   width: 42px;
   z-index: 600; }
-  .sidebar:hover {
-    width: 150px; }
-  .sidebar.subnav {
+  .navbar:hover {
+    width: 180px; }
+  .navbar.subnav {
     background: #2f424d;
     z-index: 550; }
 
-.sidebar .logo {
+.navbar .logo {
+  font-family: 'Fugaz One';
+  font-size: 18px;
   height: 40px;
   margin-right: 10px;
   padding-top: 12px;
   text-align: center;
   width: 100%; }
-  .sidebar .logo .logo-text {
+  .navbar .logo span {
     display: inline-block;
     line-height: 100%;
     letter-spacing: .05em;
     position: relative;
     overflow: hidden;
     width: 12px; }
-    .sidebar .logo .logo-text:last-child {
+    .navbar .logo span:last-child {
       margin-left: -4px; }
-.sidebar:hover .logo-text {
+.navbar:hover span {
   letter-spacing: 0em !important; }
-  .sidebar:hover .logo-text:first-child {
+  .navbar:hover span:first-child {
     width: 80px; }
-  .sidebar:hover .logo-text:last-child {
+  .navbar:hover span:last-child {
     width: 50px; }
 
-.sidebar .user-box {
+.navbar .user-box {
   *zoom: 1;
   transition: height 0.25s, background 0.25s;
   background: #1e8bc3;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   height: 42px;
+  overflow: hidden;
   position: relative;
-  width: 150px; }
-  .sidebar .user-box:before, .sidebar .user-box:after {
+  width: 180px; }
+  .navbar .user-box:before, .navbar .user-box:after {
     content: " ";
     display: table; }
-  .sidebar .user-box:after {
+  .navbar .user-box:after {
     clear: both; }
-  .sidebar .user-box:hover {
+  .navbar .user-box:hover {
     background: rgba(47, 66, 77, 0.5);
-    height: 150px; }
-  .sidebar .user-box .alert {
-    border-radius: 0 0 0 3px;
-    position: absolute;
-    top: 0;
-    right: 108px; }
-  .sidebar .user-box .avatar {
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    float: left;
-    height: 42px;
-    width: 43px; }
-  .sidebar .user-box .username {
-    line-height: 42px;
-    float: left;
-    overflow: hidden;
-    padding: 0 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 107px; }
-.sidebar:hover .user-box .alert {
+    height: 118px; }
+  .navbar .user-box .user-info {
+    height: 42px; }
+    .navbar .user-box .user-info .alert {
+      border-radius: 0 0 0 3px;
+      position: absolute;
+      top: 0;
+      right: 138px; }
+    .navbar .user-box .user-info .avatar {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      float: left;
+      height: 42px;
+      width: 43px; }
+    .navbar .user-box .user-info .username {
+      line-height: 42px;
+      float: left;
+      overflow: hidden;
+      padding: 0 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 137px; }
+.navbar:hover .user-box .alert {
   right: 0; }
 
-.topbar {
+#topbar {
   height: 40px;
   left: 0;
   padding-left: 84px;
@@ -185,13 +192,24 @@ body {
   top: 0;
   width: 100%;
   z-index: 500; }
-  .topbar .input-search {
+  #topbar .input-search {
     display: inline-block;
     width: 300px; }
-    .topbar .input-search input {
+    #topbar .input-search input {
       width: 100%; }
-      .topbar .input-search input:focus {
+      #topbar .input-search input:focus {
         height: 30px; }
+
+.navbar nav a, .navbar .user-box .user-nav a {
+  display: block;
+  line-height: 1.5em; }
+  .navbar nav a i, .navbar .user-box .user-nav a i {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 .4em; }
+  .navbar nav a span, .navbar .user-box .user-nav a span {
+    position: relative;
+    top: -2px; }
 
 .alert {
   border-radius: 999px;
@@ -213,16 +231,21 @@ body {
 
 .button {
   border-radius: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   display: inline-block;
-  font-weight: 600;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 800;
+  outline: 0;
   padding: 6px 18px 4px;
   text-transform: uppercase; }
   .button:hover {
     color: white; }
   .button:active {
-    color: white; }
+    color: rgba(255, 255, 255, 0.7); }
+  .buttonbutton {
+    padding-top: 4px; }
 
 .button.submit {
   background: #46cb65; }
@@ -230,29 +253,42 @@ body {
 .button.cancel {
   background: #cc0000; }
 
-h1 {
-  font-family: 'Fugaz One';
-  font-size: 18px; }
+form fieldset {
+  margin-bottom: 15px;
+  width: 200px; }
+  form fieldset label {
+    display: block;
+    margin-bottom: 5px; }
 
 a {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none; }
   a:hover {
     color: #46cb65; }
+  a:active {
+    color: #31ad4e; }
 
-.sidebar nav {
+#footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
   font-weight: 800; }
 
 i {
   color: inherit; }
 
 input {
-  background: #E0E7E9;
+  background: #e0e7e9;
   border: none;
-  color: black;
+  color: gray;
+  font-size: 14px;
   outline: 0;
-  height: 20px;
+  padding: 5px 7px;
   width: 100%; }
+  input:focus {
+    color: black; }
+
+.modal .modal-content input {
+  font-size: 20px;
+  height: 40px;
+  padding: 0 10px; }
 
 .input-search {
   color: black;
@@ -265,42 +301,65 @@ input {
     top: 50%; }
   .input-search input {
     border-radius: 0 0 4px 4px;
-    padding-left: 25px; }
+    height: 20px;
+    padding: 0 0 0 25px; }
 
-nav a {
-  display: block; }
+.lightbox {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5000; }
 
-.sidebar nav {
-  text-transform: uppercase; }
+.modal {
+  margin: 100px auto 0;
+  min-width: 400px;
+  width: 50%; }
+  .modal .modal-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .modal .modal-content input + input {
+    margin-top: 20px; }
+  .modal .modal-footer {
+    margin-top: 10px;
+    text-align: center; }
+    .modal .modal-footer .button {
+      margin: 0 5px; }
+
+#footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
+  display: block;
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 #footer nav a {
   display: inline;
   margin-right: 5px; }
 
-.sidebar nav {
-  width: 100%; }
-  .sidebar nav a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    white-space: nowrap; }
-    .sidebar nav a:first-child {
-      border-top: 1px solid rgba(0, 0, 0, 0.2); }
-    .sidebar nav a.active, .sidebar nav a:hover {
-      background: rgba(47, 66, 77, 0.8); }
-    .sidebar nav a i {
-      font-size: 20px;
-      text-align: center;
-      padding: 8px 0;
-      width: 42px; }
-    .sidebar nav a .label {
-      font-size: 13px;
-      position: relative;
-      top: -2px; }
+.navbar nav a, .navbar .user-box .user-nav a {
+  padding: .6em 0 .5em; }
 
-.sidebar.subnav nav {
+.navbar nav a, .navbar .user-box .user-nav a {
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  .navbar nav a:last-child, .navbar .user-box .user-nav a:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .navbar nav a.active, .navbar .user-box .user-nav a.active, .navbar nav a:hover, .navbar .user-box .user-nav a:hover {
+    background: rgba(47, 66, 77, 0.8); }
+
+.navbar nav, .navbar .user-box .user-nav {
+  font-size: 13px; }
+  .navbar nav i, .navbar .user-box .user-nav i {
+    width: 42px; }
+
+.navbar.subnav nav {
   margin-top: 82px; }
-  .sidebar.subnav nav a.active,
-  .sidebar.subnav nav a:hover {
+  .navbar.subnav nav a.active,
+  .navbar.subnav nav a:hover {
     background: rgba(34, 49, 63, 0.8); }
+
+#footer nav {
+  padding-top: 10px; }
 
 .notifications {
   height: 100%;

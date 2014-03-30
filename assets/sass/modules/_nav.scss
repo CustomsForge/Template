@@ -1,49 +1,63 @@
-nav a {
-  display: block;
+%nav {
+  a {
+    @extend %link-heavy;
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 }
 
-%nav-heavy {
-  @extend %link-heavy;
-  text-transform: uppercase;
-}
-
+// ------------
+// Structure Variants
+// ------------
 %nav-inline {
+  @extend %nav;
+
   a {
     display: inline;
     margin-right: 5px;
   }
 }
 
-%sidebar-nav {
-  @extend %transition-width;
-  @extend %nav-heavy;
-  width: 100%;
+%nav-icons {
+  @extend %nav;
 
   a {
-    border-bottom: $border-dark;
-    white-space: nowrap;
+    @extend %format-icon-label;
+    padding: .6em 0 .5em;
+  }
+}
 
-    &:first-child { border-top: $border-dark; }
+// --------------
+// Style Variants
+// --------------
+%nav-buttons {
+  a {
+    border-top: $border-dark;
+    &:last-child { border-bottom: $border-dark; }
     &.active,
     &:hover { background: rgba($secondary, .8); }
-
-    i {
-      font-size: 20px;
-      text-align: center;
-      padding: 8px 0;
-      width: $sidebar_width;
-    }
-    
-    .label {
-      font-size: 13px;
-      position:relative;
-      top:-2px;
-    }
   }
+}
+
+// -------------
+// Page Specific
+// -------------
+%sidebar-nav {
+  @extend %nav-icons;
+  @extend %nav-buttons;
+  font-size: 13px;
+
+  i { width: $sidebar_width; }
 }
 
 %subnav-nav {
   margin-top: $subnav_offset;
   a.active,
   a:hover { background: rgba($primary, .8); }
+}
+
+%footer-nav {
+  @extend %nav-inline;
+  padding-top: 10px;
 }

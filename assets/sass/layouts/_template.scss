@@ -3,6 +3,7 @@ body {
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
+  min-height: 500px;
 }
 
 #main {
@@ -23,8 +24,5 @@ body {
   padding: $pad 0 0 $body_offset;
   text-align: center;
 
-  nav {
-    @extend %nav-inline;
-    padding-top: 10px;
-  }
+  nav { @extend %footer-nav; }
 }

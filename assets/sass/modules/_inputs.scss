@@ -1,10 +1,19 @@
 input {
-  background: #E0E7E9;
+  background: $input_bg;
   border: none;
-  color: $input_text;
+  color: lighten($input_text, 50);
+  font-size: 14px;
   outline: 0;
-  height: 20px;
+  padding: 5px 7px;
   width: 100%;
+
+  &:focus { color: $input_text; }
+}
+
+%input-large {
+  font-size: 20px;
+  height: 40px;
+  padding: 0 10px;
 }
 
 .input-search {
@@ -21,6 +30,7 @@ input {
 
   input {
     border-radius: 0 0 4px 4px;
-    padding-left: 25px;
+    height: 20px;
+    padding: 0 0 0 25px;
   }
 }

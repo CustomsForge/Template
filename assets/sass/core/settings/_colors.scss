@@ -2,16 +2,22 @@
 $red: #CC0000;
 $green: #46CB65;
 
+// The Body
 $primary: #22313F;
 $primary_alt: #1F2D3A;
 $primary_text: rgba(255,255,255,0.9);
 $primary_link: rgba(255,255,255,0.9);
 $primary_link_hover: $green;
+$primary_link_active: darken($green, 10);
 
+// The Subnav
 $secondary: #2F424D;
+$secondary_text: rgba(0,0,0,0.9);
 
+// The Nav
 $accent: #1E8BC3;
 
+$input_bg: #E0E7E9;
 $input_text: #000;
 
 // -----------------
