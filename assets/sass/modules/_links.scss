@@ -2,6 +2,7 @@ a {
   color: $primary_link;
   text-decoration: none;
 
+  &.active,
   &:hover { color: $primary_link_hover; }
   &:active { color: $primary_link_active; }
 }

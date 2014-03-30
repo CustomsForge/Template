@@ -1,0 +1,16 @@
+#content-header {
+  background: $primary_alt;
+  box-shadow: $box-shadow-bottom;
+  height: $content_header_height;
+  top: $topbar_height;
+  padding: $pad_small 0;
+  padding-left: $body_offset;
+  position: fixed;
+  width: 100%;
+
+  nav {
+    @extend %nav-inline;
+    margin: 0 auto;
+    width: 50%;
+  }
+}

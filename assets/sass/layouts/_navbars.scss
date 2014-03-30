@@ -11,7 +11,7 @@
 .navbar {
   @extend %transition-width;
   background: $accent;
-  box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+  box-shadow: $box-shadow-right;
   float: left;
   height: 100%;
   overflow: hidden;

@@ -90,6 +90,9 @@ body {
   padding-right: 15px;
   padding-top: 50px; }
 
+#content-header + #content {
+  padding-top: 75px; }
+
 #footer {
   background: #1f2d3a;
   font-size: 11px;
@@ -107,7 +110,7 @@ body {
 
 .navbar {
   background: #1e8bc3;
-  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
   float: left;
   height: 100%;
   overflow: hidden;
@@ -185,6 +188,7 @@ body {
   right: 0; }
 
 #topbar {
+  background: #1f2d3a;
   height: 40px;
   left: 0;
   padding-left: 84px;
@@ -195,11 +199,23 @@ body {
   z-index: 500; }
   #topbar .input-search {
     display: inline-block;
+    margin-top: 4px;
     width: 300px; }
     #topbar .input-search input {
       width: 100%; }
-      #topbar .input-search input:focus {
-        height: 30px; }
+
+#content-header {
+  background: #1f2d3a;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 25px;
+  top: 40px;
+  padding: 5px 0;
+  padding-left: 84px;
+  position: fixed;
+  width: 100%; }
+  #content-header nav {
+    margin: 0 auto;
+    width: 50%; }
 
 .navbar nav a, .navbar .user-box .user-nav a {
   display: block;
@@ -270,12 +286,12 @@ h3 {
 a {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none; }
-  a:hover {
+  a.active, a:hover {
     color: #46cb65; }
   a:active {
     color: #31ad4e; }
 
-#footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
+#content-header nav a, #footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
   font-weight: 800; }
 
 i {
@@ -308,7 +324,8 @@ i.indicator {
 input {
   background: #e0e7e9;
   border: none;
-  color: gray;
+  border-radius: 1px;
+  color: #404040;
   font-size: 14px;
   outline: 0;
   padding: 5px 7px;
@@ -322,18 +339,16 @@ input {
   padding: 0 10px; }
 
 .input-search {
-  color: black;
+  color: #404040;
   position: relative; }
   .input-search .fa-search {
-    font-size: 12px;
+    font-size: 14px;
     left: 5px;
-    margin-top: -6px;
+    margin-top: -8px;
     position: absolute;
     top: 50%; }
   .input-search input {
-    border-radius: 0 0 4px 4px;
-    height: 20px;
-    padding: 0 0 0 25px; }
+    padding-left: 25px; }
 
 .lightbox {
   background: rgba(0, 0, 0, 0.9);
@@ -359,12 +374,12 @@ input {
     .modal .modal-footer .button {
       margin: 0 5px; }
 
-#footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
+#content-header nav a, #footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
   display: block;
   text-transform: uppercase;
   white-space: nowrap; }
 
-#footer nav a {
+#content-header nav a, #footer nav a {
   display: inline;
   margin-right: 5px; }
 
@@ -409,6 +424,7 @@ input {
     top: -11px; }
 
 table {
+  margin-bottom: 30px;
   width: 100%; }
   table thead {
     font-size: 10px;

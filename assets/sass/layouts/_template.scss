@@ -17,6 +17,10 @@ body {
   padding-top: $topbar_height + $pad;
 }
 
+#content-header + #content {
+  padding-top: $topbar_height + $content_header_height + $pad ;
+}
+
 #footer {
   background: $primary_alt;
   font-size: 11px;

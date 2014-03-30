@@ -22,6 +22,7 @@ $accent: #1E8BC3;
 
 $input_bg: #E0E7E9;
 $input_text: #000;
+$input_text_faded: lighten($input_text, 25);
 
 // -----------------
 // Background colors
@@ -45,3 +46,9 @@ $indicator_dynamic_difficulty: $orange;
 // ------------------
 $border-dark: 1px solid rgba(0,0,0,0.2);
 $border-light: 1px solid rgba(255,255,255,0.05);
+
+// ------------------
+// Box Shadows
+// ------------------
+$box-shadow-bottom: 0 1px 2px rgba(0,0,0,0.2);
+$box-shadow-right: 1px 0 2px rgba(0,0,0,0.2);
