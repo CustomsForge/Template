@@ -91,7 +91,7 @@ body {
   padding-top: 50px; }
 
 #content-header + #content {
-  padding-top: 75px; }
+  padding-top: 84px; }
 
 #footer {
   background: #1f2d3a;
@@ -207,15 +207,15 @@ body {
 #content-header {
   background: #1f2d3a;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 25px;
+  min-height: 34px;
   top: 40px;
-  padding: 5px 0;
-  padding-left: 84px;
+  padding: 10px 15px 5px;
+  padding-left: 99px;
   position: fixed;
   width: 100%; }
   #content-header nav {
     margin: 0 auto;
-    width: 50%; }
+    text-align: center; }
 
 .navbar nav a, .navbar .user-box .user-nav a {
   display: block;
@@ -303,7 +303,8 @@ i.indicator {
   height: 8px;
   width: 8px; }
   i.indicator.false {
-    background: none !important; }
+    background: none !important;
+    opacity: .5; }
 
 .bass i.indicator {
   background: #69b4d1;
@@ -380,8 +381,9 @@ input {
   white-space: nowrap; }
 
 #content-header nav a, #footer nav a {
-  display: inline;
-  margin-right: 5px; }
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px; }
 
 .navbar nav a, .navbar .user-box .user-nav a {
   padding: .6em 0 .5em; }
@@ -444,7 +446,9 @@ table .add {
   width: 30px; }
   table .add i {
     cursor: pointer;
-    font-size: 16px; }
+    font-size: 16px;
+    position: relative;
+    top: 1px; }
   table .add i.fa-plus-circle:hover {
     color: #46cb65; }
   table .add i.fa-check-circle {
@@ -459,12 +463,21 @@ table .updated_at {
   width: 100px; }
 table .author {
   width: 80px; }
+table .windows,
+table .apple,
+table .playstation,
+table .xbox,
 table .lead,
 table .rhythm,
 table .dynamic_difficulty,
 table .bass {
+  padding: 5px 0;
   text-align: center;
-  width: 30px; }
+  width: 26px; }
+table td.playstation {
+  color: #665cbe; }
+table td.xbox {
+  color: #52b043; }
 
 .user-card {
   cursor: pointer;

@@ -20,14 +20,19 @@ table {
 }
 
 // --------------
-// Special Widths
+// Special Columns
 // --------------
 table {
   .add {
     text-align: center;
     width: 30px;
 
-    i { cursor: pointer; font-size: 16px; }
+    i {
+      cursor: pointer;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+    }
     i.fa-plus-circle:hover { color: $green; }
     i.fa-check-circle { color: $green; }
     i.fa-check-circle:hover { color: $red; }
@@ -36,11 +41,20 @@ table {
   .album { min-width: 50px; }
   .updated_at { width: 100px; }
   .author { width: 80px; }
+
+  .windows,
+  .apple,
+  .playstation,
+  .xbox,
   .lead,
   .rhythm,
   .dynamic_difficulty,
   .bass {
+    padding: $pad_small 0;
     text-align: center;
-    width: 30px;
+    width: 26px;
   }
+
+  td.playstation { color: $platform_playstation; }
+  td.xbox { color: $platform_xbox; }
 }
