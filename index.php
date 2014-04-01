@@ -1,5 +1,3 @@
-<?php $page = $_GET['page'] ?>
-<?php $root_url = $_SERVER['SERVER_PORT'] == "80" ? "/template" : "" ?>
 <?php require 'helpers.php'; ?>
 
 <!doctype html>
@@ -19,6 +17,7 @@
     <?php $templateName = "templates/{$page}.php"; ?>
     <?php include $templateName; ?>
     <?php echo $_SERVER['SERVER_PORT']; ?>
+    <?php echo $root_url; ?>
   </div>
 
   <?php include 'layout/footer.html'; ?>
