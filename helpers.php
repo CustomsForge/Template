@@ -7,9 +7,9 @@
     global $page, $root_url;
 
     $link = '<a ';
-    if($page == $url_page) {
+    if($page === $url_page) {
       $link = $link . 'class="active" ';
     }
-    echo $link . "href='/?page=".$url_page."'>";
+    echo $link . "href='".$root_url."/?page=".$url_page."'>";
   }
 ?>
