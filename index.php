@@ -1,4 +1,6 @@
+<?php $page = $_GET['page'] ?>
 <?php $root_url = $_SERVER['SERVER_PORT'] == "80" ? "/template" : "" ?>
+<?php require 'helpers.php'; ?>
 
 <!doctype html>
 <html lang="en">
@@ -14,7 +16,7 @@
   <?php include 'layout/navigation.html'; ?>
   
   <div id="main">
-    <?php $templateName = "templates/{$_GET['page']}.php"; ?>
+    <?php $templateName = "templates/{$page}.php"; ?>
     <?php include $templateName; ?>
   </div>
 

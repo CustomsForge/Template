@@ -53,11 +53,11 @@
 
   <div class="navbar subnav">
     <nav>
-      <a class="active" href="<?php echo $root_url; ?>/?page=browse">
+      <?php link_generator('browse'); ?>
         <i class="fa fa-book"></i>
         <span>Browse</span>
       </a>
-      <a href="<?php echo $root_url; ?>/?page=collection">
+      <?php link_generator('collection'); ?>
         <i class="fa fa-inbox"></i>
         <span>Collection</span>
       </a>
