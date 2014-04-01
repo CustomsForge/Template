@@ -18,6 +18,7 @@
   <div id="main">
     <?php $templateName = "templates/{$page}.php"; ?>
     <?php include $templateName; ?>
+    <?php echo $_SERVER['SERVER_PORT']; ?>
   </div>
 
   <?php include 'layout/footer.html'; ?>
