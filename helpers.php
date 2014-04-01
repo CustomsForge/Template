@@ -1,6 +1,7 @@
 <?php
   $page = $_GET['page'];
-  $root_url = $_SERVER['SERVER_PORT'] == "80" ? "/template" : "";
+  $port = intval($_SERVER['SERVER_PORT'])
+  $root_url = (port == 80) ? "/template" : "";
 
   function link_generator($url_page) {
     global $page, $root_url;
