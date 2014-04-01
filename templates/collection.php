@@ -29,7 +29,7 @@
   </nav>
 </div>
 <div id="content">
-  <h3>M</h3>
+  <h3>Metallica</h3>
   <table>
     <thead>
       <tr>
