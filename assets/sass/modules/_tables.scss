@@ -7,7 +7,7 @@ table {
     text-align: left;
 
     th {
-      border-bottom: 1px solid $primary_alt;
+      border-bottom: 1px solid darken($primary_alt, 4);
       padding: 5px;
     }
   }
@@ -37,12 +37,14 @@ table {
     i.fa-check-circle { color: $green; }
     i.fa-check-circle:hover { color: $red; }
   }
+
   .artist { min-width: 100px; }
   .title { min-width: 100px; }
   .album { min-width: 50px; }
   .updated_at { width: 100px; }
   .author { width: 80px; }
 
+  // Icon Cells
   .windows,
   .apple,
   .playstation,
@@ -58,7 +60,6 @@ table {
 
   td.playstation { color: $platform_playstation; }
   td.xbox { color: $platform_xbox; }
-
 
   .lead,
   .rhythm,

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="assets/sass/themes/default/theme.css">
 </head>
 <body>
-
   <?php include 'layout/topbar.html'; ?>
   <?php include 'layout/navigation.html'; ?>
   
