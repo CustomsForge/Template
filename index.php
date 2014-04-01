@@ -1,4 +1,4 @@
-<?php $root_url = $_SERVER['SERVER_PORT'] == "8888" ? "" : "/template" ?>
+<?php $root_url = $_SERVER['SERVER_PORT'] == "80" ? "/template" : "" ?>
 
 <!doctype html>
 <html lang="en">
@@ -16,7 +16,6 @@
   <div id="main">
     <?php $templateName = "templates/{$_GET['page']}.php"; ?>
     <?php include $templateName; ?>
-    <?php echo $_SERVER['SERVER_PORT']; ?>
   </div>
 
   <?php include 'layout/footer.html'; ?>
