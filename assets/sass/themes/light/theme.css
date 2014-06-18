@@ -2,6 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
+@import url(../../libraries/select2.css);
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
