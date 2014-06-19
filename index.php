@@ -7,6 +7,8 @@
   <title>CustomsForge Template</title>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="assets/javascripts/libraries/select2.min.js"></script>
+  <script src="assets/javascripts/global.js"></script>
   <link rel="stylesheet" href="assets/sass/themes/default/theme.css">
 </head>
 <body>

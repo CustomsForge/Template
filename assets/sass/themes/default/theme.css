@@ -1,11 +1,11 @@
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com test
+ * http://cssreset.com
  */
-@import url(../../libraries/select2.css);
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(../../libraries/select2.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,148 +75,32 @@ button {
 .navbar, .navbar .logo span {
   transition: width 0.25s; }
 
-body {
-  background: #22313f;
-  color: rgba(255, 255, 255, 0.9);
-  font-family: 'Open Sans';
-  font-size: 13px;
-  min-height: 500px; }
+.select2-container {
+  font-size: 12px;
+  padding-right: 5px; }
+  .select2-container .select2-choice {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.9); }
+    .select2-container .select2-choice .select2-arrow {
+      background: none;
+      border: none;
+      margin-right: 3px;
+      width: 9px; }
+      .select2-container .select2-choice .select2-arrow b:before {
+        font-family: "FontAwesome";
+        content: '\f0d7';
+        left: 1px;
+        position: relative;
+        top: -1px; }
+    .select2-container .select2-choice .select2-chosen {
+      margin-right: 20px; }
 
-#main {
-  min-height: 100%;
-  padding-bottom: 67px; }
-
-#content {
-  padding-left: 99px;
-  padding-right: 15px;
-  padding-top: 50px; }
-
-#content-header + #content {
-  padding-top: 84px; }
-
-#footer {
-  background: #1f2d3a;
-  font-size: 11px;
-  height: 52px;
-  margin-top: -52px;
-  padding: 10px 0 0 84px;
-  text-align: center; }
-
-#navigation {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  z-index: 700; }
-
-.navbar {
-  background: #1e8bc3;
-  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
-  float: left;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 42px;
-  z-index: 600; }
-  .navbar:hover {
-    width: 180px; }
-  .navbar.subnav {
-    background: #2f424d;
-    z-index: 550; }
-
-.navbar .logo {
-  font-family: 'Fugaz One';
-  font-size: 18px;
-  height: 40px;
-  margin-right: 10px;
-  padding-top: 12px;
-  text-align: center;
-  width: 100%; }
-  .navbar .logo span {
-    display: inline-block;
-    line-height: 100%;
-    letter-spacing: .05em;
-    position: relative;
-    overflow: hidden;
-    width: 12px; }
-    .navbar .logo span:last-child {
-      margin-left: -4px; }
-.navbar:hover span {
-  letter-spacing: 0em !important; }
-  .navbar:hover span:first-child {
-    width: 80px; }
-  .navbar:hover span:last-child {
-    width: 50px; }
-
-.navbar .user-box {
-  *zoom: 1;
-  transition: height 0.25s, background 0.25s;
-  background: #1e8bc3;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  height: 42px;
-  overflow: hidden;
-  position: relative;
-  width: 180px; }
-  .navbar .user-box:before, .navbar .user-box:after {
-    content: " ";
-    display: table; }
-  .navbar .user-box:after {
-    clear: both; }
-  .navbar .user-box:hover {
-    background: rgba(47, 66, 77, 0.5);
-    height: 154px; }
-  .navbar .user-box .user-info {
-    height: 42px; }
-    .navbar .user-box .user-info .alert {
-      border-radius: 0 0 0 3px;
-      position: absolute;
-      top: 0;
-      right: 138px; }
-    .navbar .user-box .user-info .avatar {
-      border-right: 1px solid rgba(0, 0, 0, 0.2);
-      float: left;
-      height: 42px;
-      width: 43px; }
-    .navbar .user-box .user-info .username {
-      line-height: 42px;
-      float: left;
-      overflow: hidden;
-      padding: 0 10px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 137px; }
-.navbar:hover .user-box .alert {
-  right: 0; }
-
-#topbar {
-  background: #1f2d3a;
-  height: 40px;
-  left: 0;
-  padding-left: 84px;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 500; }
-  #topbar .input-search {
-    display: inline-block;
-    margin-top: 4px;
-    width: 300px; }
-    #topbar .input-search input {
-      width: 100%; }
-
-#content-header {
-  background: #1f2d3a;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  min-height: 34px;
-  top: 40px;
-  padding: 10px 15px 5px;
-  padding-left: 99px;
-  position: fixed;
-  width: 100%; }
-  #content-header nav {
-    margin: 0 auto;
-    text-align: center; }
+.select2-dropdown-open .select2-choice {
+  box-shadow: none; }
+  .select2-dropdown-open .select2-choice b:before {
+    content: '\f0d8' !important; }
 
 .navbar nav a, .navbar .user-box .user-nav a {
   display: block;
@@ -246,6 +130,9 @@ body {
   .avatar img {
     height: 100%;
     width: 100%; }
+
+button {
+  outline: none; }
 
 .button {
   border-radius: 2px;
@@ -292,7 +179,7 @@ a {
   a:active {
     color: #31ad4e; }
 
-#content-header nav a, #footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
+#footer nav a, #content-header nav a, .navbar nav a, .navbar .user-box .user-nav a {
   font-weight: 800; }
 
 i {
@@ -325,7 +212,7 @@ input {
   border: none;
   border-radius: 1px;
   color: #404040;
-  font-size: 14px;
+  font-size: 13px;
   outline: 0;
   padding: 5px 7px;
   width: 100%; }
@@ -340,14 +227,24 @@ input {
 .input-search {
   color: #404040;
   position: relative; }
-  .input-search .fa-search {
-    font-size: 14px;
-    left: 5px;
-    margin-top: -8px;
+  .input-search .search {
+    background: #46cb65;
+    border-radius: 0px 3px 3px 0px;
+    color: #fff;
+    cursor: pointer;
+    height: 26px;
     position: absolute;
-    top: 50%; }
+    right: 0px;
+    top: 2px;
+    width: 27px; }
+    .input-search .search .fa-search {
+      font-size: 14px;
+      left: 5px;
+      margin-top: -8px;
+      top: 50%; }
   .input-search input {
-    padding-left: 25px; }
+    border-radius: 3px;
+    padding-left: 5px; }
 
 .lightbox {
   background: rgba(0, 0, 0, 0.9);
@@ -373,12 +270,12 @@ input {
     .modal .modal-footer .button {
       margin: 0 5px; }
 
-#content-header nav a, #footer nav a, .navbar nav a, .navbar .user-box .user-nav a {
+#footer nav a, #content-header nav a, .navbar nav a, .navbar .user-box .user-nav a {
   display: block;
   text-transform: uppercase;
   white-space: nowrap; }
 
-#content-header nav a, #footer nav a {
+#footer nav a, #content-header nav a {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px; }
@@ -401,7 +298,7 @@ input {
     width: 42px; }
 
 .navbar.subnav nav {
-  margin-top: 82px; }
+  margin-top: 112px; }
   .navbar.subnav nav a.active,
   .navbar.subnav nav a:hover {
     background: rgba(34, 49, 63, 0.8); }
@@ -422,6 +319,16 @@ input {
   .notifications .alert {
     left: -8px;
     top: -11px; }
+
+#topbar .filters .filter-group-by {
+  display: inline-block;
+  text-align: left; }
+  #topbar .filters .filter-group-by label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  #topbar .filters .filter-group-by .select2-container {
+    top: -1px; }
 
 table {
   margin-bottom: 30px;
@@ -491,3 +398,151 @@ table .bass {
   .user-card .alert {
     left: 10px;
     bottom: 36px; }
+
+body {
+  background: #22313f;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Open Sans';
+  font-size: 13px;
+  min-height: 500px; }
+
+#main {
+  min-height: 100%;
+  padding-bottom: 67px; }
+
+#content {
+  padding-left: 99px;
+  padding-right: 15px;
+  padding-top: 80px; }
+
+#content-header + #content {
+  padding-top: 114px; }
+
+#footer {
+  background: #1f2d3a;
+  font-size: 11px;
+  height: 52px;
+  margin-top: -52px;
+  padding: 10px 0 0 84px;
+  text-align: center; }
+
+#navigation {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 700; }
+
+.navbar {
+  background: #1e8bc3;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 42px;
+  z-index: 600; }
+  .navbar:hover {
+    width: 180px; }
+  .navbar.subnav {
+    background: #2f424d;
+    z-index: 550; }
+
+.navbar .logo {
+  font-family: 'Fugaz One';
+  font-size: 18px;
+  height: 70px;
+  margin-right: 10px;
+  padding-top: 12px;
+  text-align: center;
+  width: 100%; }
+  .navbar .logo span {
+    display: inline-block;
+    line-height: 100%;
+    letter-spacing: .05em;
+    position: relative;
+    overflow: hidden;
+    width: 12px; }
+    .navbar .logo span:last-child {
+      margin-left: -4px; }
+.navbar:hover span {
+  letter-spacing: 0em !important; }
+  .navbar:hover span:first-child {
+    width: 80px; }
+  .navbar:hover span:last-child {
+    width: 50px; }
+
+.navbar .user-box {
+  *zoom: 1;
+  transition: height 0.25s, background 0.25s;
+  background: #1e8bc3;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+  width: 180px; }
+  .navbar .user-box:before, .navbar .user-box:after {
+    content: " ";
+    display: table; }
+  .navbar .user-box:after {
+    clear: both; }
+  .navbar .user-box:hover {
+    background: rgba(47, 66, 77, 0.5);
+    height: 154px; }
+  .navbar .user-box .user-info {
+    height: 42px; }
+    .navbar .user-box .user-info .alert {
+      border-radius: 0 0 0 3px;
+      position: absolute;
+      top: 0;
+      right: 138px; }
+    .navbar .user-box .user-info .avatar {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      float: left;
+      height: 42px;
+      width: 43px; }
+    .navbar .user-box .user-info .username {
+      line-height: 42px;
+      float: left;
+      overflow: hidden;
+      padding: 0 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 137px; }
+.navbar:hover .user-box .alert {
+  right: 0; }
+
+#topbar {
+  background: #1f2d3a;
+  height: 70px;
+  left: 0;
+  padding-left: 84px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 500; }
+  #topbar .input-search {
+    display: inline-block;
+    margin-top: 4px;
+    width: 300px; }
+    #topbar .input-search input {
+      width: 100%; }
+  #topbar .filters {
+    padding: 5px 0;
+    text-align: left;
+    margin: 0 auto;
+    width: 300px; }
+
+#content-header {
+  background: #1f2d3a;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  min-height: 34px;
+  top: 70px;
+  padding: 10px 15px 5px;
+  padding-left: 99px;
+  position: fixed;
+  width: 100%; }
+  #content-header nav {
+    margin: 0 auto;
+    text-align: center; }

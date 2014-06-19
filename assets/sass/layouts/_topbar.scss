@@ -19,4 +19,13 @@
       width: 100%;
     }
   }
+
+  .filters {
+    padding: $pad_small 0;
+    text-align: left;
+    margin: 0 auto;
+    width: 300px;
+
+    .filter-group-by { @extend %select-inline; }
+  }
 }

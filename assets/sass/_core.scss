@@ -4,10 +4,9 @@
 @import 'core/resets/100-percent-height';
 @import 'core/resets/buttons';
 
-// Libraries
+// Sass Libraries
 @import 'core/libraries/bourbon/bourbon';
 @import 'core/libraries/neat/neat';
-@import '../../libraries/select2.css'; // For some reason it has to go up two levels from the theme directory. Wtf?
 
 // Fonts
 @import 'core/fonts/fugaz_one';
@@ -18,3 +17,7 @@
 @import 'core/settings/colors';
 @import 'core/settings/dimensions';
 @import 'core/settings/transitions';
+
+// Plugin Libraries
+@import '../../libraries/select2.css'; // For some reason it has to go up two levels from the theme directory. Wtf?
+@import 'libraries/select2_custom';
