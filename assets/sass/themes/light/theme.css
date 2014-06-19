@@ -5,7 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
-@import url(../../libraries/select2.css);
+@import url(../../libraries/selectize.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,33 +74,6 @@ button {
 
 .navbar, .navbar .logo span {
   transition: width 0.25s; }
-
-.select2-container {
-  font-size: 12px;
-  padding-right: 5px; }
-  .select2-container .select2-choice {
-    background: none;
-    border: none;
-    box-shadow: none;
-    color: rgba(255, 255, 255, 0.9); }
-    .select2-container .select2-choice .select2-arrow {
-      background: none;
-      border: none;
-      margin-right: 3px;
-      width: 9px; }
-      .select2-container .select2-choice .select2-arrow b:before {
-        font-family: "FontAwesome";
-        content: '\f0d7';
-        left: 1px;
-        position: relative;
-        top: -1px; }
-    .select2-container .select2-choice .select2-chosen {
-      margin-right: 20px; }
-
-.select2-dropdown-open .select2-choice {
-  box-shadow: none; }
-  .select2-dropdown-open .select2-choice b:before {
-    content: '\f0d8' !important; }
 
 body {
   background: #22313f;

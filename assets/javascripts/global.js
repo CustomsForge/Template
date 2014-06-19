@@ -1,5 +1,3 @@
 $(function() {
-  $("select").select2({
-    minimumResultsForSearch: -1
-  });
+  $("select").selectize();
 });
