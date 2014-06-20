@@ -1,9 +1,14 @@
+html {
+  min-width: 800px;
+}
+
 body {
   background: $primary;
   color: $primary_text;
   font-family: 'Open Sans';
   font-size: 13px;
   min-height: 500px;
+  min-width: $main_min_width;
 }
 
 #main {
@@ -12,7 +17,7 @@ body {
 }
 
 #content {
-  padding-left: $body_offset + $pad_large;
+  padding-left: $body_offset;
   padding-right: $pad_large;
   padding-top: $topbar_height + $pad;
 }

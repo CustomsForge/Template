@@ -1,4 +1,4 @@
-<div id="content-header">
+<!-- <div id="content-header">
   <nav>
     <a href="#">a</a>
     <a href="#">b</a>
@@ -27,7 +27,7 @@
     <a href="#">y</a>
     <a href="#">z</a>
   </nav>
-</div>
+</div> -->
 <div id="content">
   <h3>Metallica</h3>
   <table>

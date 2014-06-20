@@ -21,6 +21,10 @@ button { outline: none; }
   background: $button_submit;
 }
 
+.button.open {
+  background: $button_open;
+}
+
 .button.cancel {
   background: $button_cancel;
 }

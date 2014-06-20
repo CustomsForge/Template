@@ -6,9 +6,13 @@ select {}
 
   label {
     color: $primary_text_alt;
+    display: block;
+    float: left;
     font-size: 11px;
     font-weight: 600;
+    position: relative;
     text-transform: uppercase;
+    top: $pad_small;
   }
 
   .fancy-select {
@@ -21,12 +25,12 @@ select {}
       color: $primary_text;
       display: inline-block;
       height: 21px;
-      padding-left: 4px;
+      padding: 4px 24px 0 $pad_small;
       width: auto;
 
       &:after {
         border-top-color: $primary_text;
-        top: 14px;
+        top: 8px;
       }
     }
 
@@ -37,9 +41,7 @@ select {}
       li { color: $green; }
       li:hover { color: $primary_link; }
 
-      &.open {
-        top: 32px;
-      }
+      &.open { top: 32px; }
     }
   }
 }

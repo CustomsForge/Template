@@ -12,8 +12,9 @@ $orange: rgb(223, 176, 90);
 
 // The Body
 $primary: #22313F;
-$primary_alt: #1F2D3A;
-$primary_highlight: rgba(255,255,255,0.05);
+$primary_alt: #1B2733;
+$primary_zebra: #1F2D3A;
+$primary_zebra_highlight: rgba(255,255,255,0.05);
 $primary_text: rgba(255,255,255,0.9);
 $primary_text_alt: rgba(255,255,255,0.7);
 $primary_link: rgba(255,255,255,0.9);
@@ -40,6 +41,7 @@ $alert_warning: $red;
 
 // Buttons
 $button_submit: $green;
+$button_open: $orange;
 $button_cancel: $red;
 
 // Indicators

@@ -5,12 +5,13 @@ $pad_large: 15px;
 
 // Template Dimensions
 // These are used to more easily adjust the width of the sidebars
-$topbar_height: 70px;
+$main_min_width: 800px;
+$topbar_height: 60px;
 $footer_height: 52px;
 $sidebar_width: 42px;
 $sidebar_width_open: 180px;
 $content_header_height: 34px;
 $user-box-height: 42px;
 $user-box-height-open: 154px;
-$body_offset: $sidebar_width * 2;
+$body_offset: ($sidebar_width * 2) + $pad_large;
 $subnav_offset: $topbar_height + $sidebar_width;

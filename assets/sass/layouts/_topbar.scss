@@ -2,6 +2,7 @@
   background: $primary_alt;
   height: $topbar_height;
   left: 0;
+  // min-width: $main_min_width;
   padding-left: $body_offset;
   position: fixed;
   text-align: center;
@@ -9,23 +10,37 @@
   width: 100%;
   z-index: 500;
 
-  .input-search {
-    display: inline-block;
-    margin-top: 4px;
-    width: 300px;
+  .main-controls {
+    width: 460px;
 
-    input {
-      @extend %transition-height;
-      width: 100%;
+    .main-search {
+      @extend %input-search;
+      float: left;
+      margin-top: $pad_large;
+      margin-right: $pad;
+      width: 300px;
+
+      input {
+        @extend %transition-height;
+        width: 100%;
+      }
     }
+
+    .main-filters {
+      float: left;
+      padding: $pad_small 0;
+      position: relative;
+      top: 15px;
+      width: 147px;
+
+      .filter-group_by { @extend %select-inline; }
+    }
+
   }
-
-  .filters {
-    padding: $pad_small 0;
-    text-align: left;
-    margin: 0 auto;
-    width: 300px;
-
-    .filter-group-by { @extend %select-inline; }
+  .open.filters {
+    position: absolute;
+    top: $pad_large;
+    right: $pad_large;
+    padding: 10px 18px 8px;
   }
 }
