@@ -129,7 +129,7 @@ button {
   background: #46cb65; }
 
 .button.open {
-  background: #dfb05a; }
+  background: #1e8bc3; }
 
 .button.cancel {
   background: #cc0000; }
@@ -296,9 +296,15 @@ input {
     left: -8px;
     top: -11px; }
 
-#topbar .main-controls .main-filters .filter-group_by {
+#topbar .main-controls .main-filters .filter-group_by, #filter-controls .filter.tuning,
+#filter-controls .filter.part,
+#filter-controls .filter.platform,
+#filter-controls .filter.dynamic-difficulty {
   text-align: left; }
-  #topbar .main-controls .main-filters .filter-group_by label {
+  #topbar .main-controls .main-filters .filter-group_by label, #filter-controls .filter.tuning label,
+  #filter-controls .filter.part label,
+  #filter-controls .filter.platform label,
+  #filter-controls .filter.dynamic-difficulty label {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     float: left;
@@ -307,9 +313,15 @@ input {
     position: relative;
     text-transform: uppercase;
     top: 5px; }
-  #topbar .main-controls .main-filters .filter-group_by .fancy-select {
+  #topbar .main-controls .main-filters .filter-group_by .fancy-select, #filter-controls .filter.tuning .fancy-select,
+  #filter-controls .filter.part .fancy-select,
+  #filter-controls .filter.platform .fancy-select,
+  #filter-controls .filter.dynamic-difficulty .fancy-select {
     display: inline-block; }
-    #topbar .main-controls .main-filters .filter-group_by .fancy-select .trigger {
+    #topbar .main-controls .main-filters .filter-group_by .fancy-select .trigger, #filter-controls .filter.tuning .fancy-select .trigger,
+    #filter-controls .filter.part .fancy-select .trigger,
+    #filter-controls .filter.platform .fancy-select .trigger,
+    #filter-controls .filter.dynamic-difficulty .fancy-select .trigger {
       background: none;
       border: none;
       box-shadow: none;
@@ -318,17 +330,32 @@ input {
       height: 21px;
       padding: 4px 24px 0 5px;
       width: auto; }
-      #topbar .main-controls .main-filters .filter-group_by .fancy-select .trigger:after {
+      #topbar .main-controls .main-filters .filter-group_by .fancy-select .trigger:after, #filter-controls .filter.tuning .fancy-select .trigger:after,
+      #filter-controls .filter.part .fancy-select .trigger:after,
+      #filter-controls .filter.platform .fancy-select .trigger:after,
+      #filter-controls .filter.dynamic-difficulty .fancy-select .trigger:after {
         border-top-color: rgba(255, 255, 255, 0.9);
         top: 8px; }
-    #topbar .main-controls .main-filters .filter-group_by .fancy-select .options {
+    #topbar .main-controls .main-filters .filter-group_by .fancy-select .options, #filter-controls .filter.tuning .fancy-select .options,
+    #filter-controls .filter.part .fancy-select .options,
+    #filter-controls .filter.platform .fancy-select .options,
+    #filter-controls .filter.dynamic-difficulty .fancy-select .options {
       background: #2f424d;
       border: none; }
-      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li {
+      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li, #filter-controls .filter.tuning .fancy-select .options li,
+      #filter-controls .filter.part .fancy-select .options li,
+      #filter-controls .filter.platform .fancy-select .options li,
+      #filter-controls .filter.dynamic-difficulty .fancy-select .options li {
         color: #46cb65; }
-      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li:hover {
+      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li:hover, #filter-controls .filter.tuning .fancy-select .options li:hover,
+      #filter-controls .filter.part .fancy-select .options li:hover,
+      #filter-controls .filter.platform .fancy-select .options li:hover,
+      #filter-controls .filter.dynamic-difficulty .fancy-select .options li:hover {
         color: rgba(255, 255, 255, 0.9); }
-      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options.open {
+      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options.open, #filter-controls .filter.tuning .fancy-select .options.open,
+      #filter-controls .filter.part .fancy-select .options.open,
+      #filter-controls .filter.platform .fancy-select .options.open,
+      #filter-controls .filter.dynamic-difficulty .fancy-select .options.open {
         top: 32px; }
 
 table {
@@ -547,6 +574,43 @@ body {
     top: 15px;
     right: 15px;
     padding: 10px 18px 8px; }
+
+#filter-controls {
+  background: #1e8bc3;
+  border-radius: 3px;
+  min-height: 10px;
+  opacity: 1;
+  padding: 15px;
+  position: absolute;
+  right: 15px;
+  text-align: left;
+  top: 58px;
+  width: 200px;
+  z-index: 9000; }
+  #filter-controls:before {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7.5px;
+    border-bottom-color: #1e8bc3;
+    content: '';
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    width: 15px; }
+  #filter-controls .filter label {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase; }
+  #filter-controls .filter + .filter {
+    margin-top: 5px; }
 
 #content-header {
   background: #1b2733;
