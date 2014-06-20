@@ -1,16 +1,45 @@
 select {}
 
 %select-inline {
-  display: inline-block;
   text-align: left;
+  // display: inline-block;
 
   label {
+    color: $primary_text_alt;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
   }
 
-  .select2-container {
-    top: -1px;
+  .fancy-select {
+    display: inline-block;
+
+    .trigger {
+      background: none;
+      border: none;
+      box-shadow: none;
+      color: $primary_text;
+      display: inline-block;
+      height: 21px;
+      padding-left: 4px;
+      width: auto;
+
+      &:after {
+        border-top-color: $primary_text;
+        top: 14px;
+      }
+    }
+
+    .options {
+      background: $secondary;
+      border: none;
+
+      li { color: $green; }
+      li:hover { color: $primary_link; }
+
+      &.open {
+        top: 32px;
+      }
+    }
   }
 }

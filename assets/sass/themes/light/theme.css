@@ -5,7 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
-@import url(../../libraries/selectize.css);
+@import url(../../libraries/fancySelect.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -442,14 +442,35 @@ input {
     top: -11px; }
 
 #topbar .filters .filter-group-by {
-  display: inline-block;
   text-align: left; }
   #topbar .filters .filter-group-by label {
+    color: rgba(255, 255, 255, 0.7);
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase; }
-  #topbar .filters .filter-group-by .select2-container {
-    top: -1px; }
+  #topbar .filters .filter-group-by .fancy-select {
+    display: inline-block; }
+    #topbar .filters .filter-group-by .fancy-select .trigger {
+      background: none;
+      border: none;
+      box-shadow: none;
+      color: rgba(255, 255, 255, 0.9);
+      display: inline-block;
+      height: 21px;
+      padding-left: 4px;
+      width: auto; }
+      #topbar .filters .filter-group-by .fancy-select .trigger:after {
+        border-top-color: rgba(255, 255, 255, 0.9);
+        top: 14px; }
+    #topbar .filters .filter-group-by .fancy-select .options {
+      background: #2f424d;
+      border: none; }
+      #topbar .filters .filter-group-by .fancy-select .options li {
+        color: #46cb65; }
+      #topbar .filters .filter-group-by .fancy-select .options li:hover {
+        color: rgba(255, 255, 255, 0.9); }
+      #topbar .filters .filter-group-by .fancy-select .options.open {
+        top: 32px; }
 
 table {
   margin-bottom: 30px;
