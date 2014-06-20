@@ -39,7 +39,8 @@ select {}
       border: none;
 
       li { color: $green; }
-      li:hover { color: $primary_link; }
+      li:hover,
+      li.hover { background: $primary; color: $primary_link; }
 
       &.open { top: 32px; }
     }

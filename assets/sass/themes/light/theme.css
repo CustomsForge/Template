@@ -548,7 +548,13 @@ input {
       #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li:hover, #filter-controls .filter.tuning .fancy-select .options li:hover,
       #filter-controls .filter.part .fancy-select .options li:hover,
       #filter-controls .filter.platform .fancy-select .options li:hover,
-      #filter-controls .filter.dynamic-difficulty .fancy-select .options li:hover {
+      #filter-controls .filter.dynamic-difficulty .fancy-select .options li:hover,
+      #topbar .main-controls .main-filters .filter-group_by .fancy-select .options li.hover,
+      #filter-controls .filter.tuning .fancy-select .options li.hover,
+      #filter-controls .filter.part .fancy-select .options li.hover,
+      #filter-controls .filter.platform .fancy-select .options li.hover,
+      #filter-controls .filter.dynamic-difficulty .fancy-select .options li.hover {
+        background: #22313f;
         color: rgba(255, 255, 255, 0.9); }
       #topbar .main-controls .main-filters .filter-group_by .fancy-select .options.open, #filter-controls .filter.tuning .fancy-select .options.open,
       #filter-controls .filter.part .fancy-select .options.open,
